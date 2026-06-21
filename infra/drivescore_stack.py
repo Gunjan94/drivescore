@@ -63,13 +63,11 @@ class DriveScoreStack(Stack):
             resources=[f"arn:aws:bedrock:{REGION}::foundation-model/anthropic.*"],
         ))
 
+        # CORS is handled by FastAPI's CORSMiddleware (allow_origins=["*"]).
+        # Do NOT also set Function URL CORS — that produces duplicate
+        # Access-Control-Allow-Origin headers and browsers reject the response.
         furl = fn.add_function_url(
             auth_type=_lambda.FunctionUrlAuthType.NONE,
-            cors=_lambda.FunctionUrlCorsOptions(
-                allowed_origins=["*"],
-                allowed_methods=[_lambda.HttpMethod.ALL],
-                allowed_headers=["*"],
-            ),
         )
 
         site = s3.Bucket(

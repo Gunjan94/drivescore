@@ -98,30 +98,32 @@ export function DriverDashboard({ driverId: initialId = "D0001" }: { driverId?: 
         </span>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:items-start">
+      <div className="lg:columns-2 lg:gap-6">
         {/* Score + tier */}
-        <div className="card p-8 flex flex-col items-center justify-center min-h-[300px]">
+        <div className="card p-8 mb-6 break-inside-avoid flex flex-col items-center">
           <Gauge score={price.drivescore} band={price.band} />
-          <div className="text-muted text-sm mt-2 text-center">{tier.blurb}</div>
+          <div className="text-muted text-sm mt-3 text-center">{tier.blurb}</div>
         </div>
 
         {/* Policy chrome */}
-        <PolicyCard policy={policy} />
+        <div className="mb-6 break-inside-avoid">
+          <PolicyCard policy={policy} />
+        </div>
 
         {/* Premium build-up (replaces the bare $/mo) */}
-        <div className="card p-8">
+        <div className="card p-8 mb-6 break-inside-avoid">
           <RatingBreakdown pv={pv} />
         </div>
 
         {/* Factors */}
-        <div className="card p-8">
+        <div className="card p-8 mb-6 break-inside-avoid">
           <h2 className="text-lg font-semibold mb-1">What's affecting your DriveScore</h2>
           <div className="text-muted text-sm mb-4">Points deducted by behaviour, last 90 days</div>
           <FactorBars factors={price.factors} topN={3} />
         </div>
 
         {/* Trip history */}
-        <div className="card p-8 lg:col-span-1">
+        <div className="card p-8 mb-6 break-inside-avoid">
           <div className="flex items-baseline justify-between mb-4">
             <h2 className="text-lg font-semibold">Recent trips</h2>
             <span className="text-muted text-xs">last 7 days</span>
@@ -130,24 +132,24 @@ export function DriverDashboard({ driverId: initialId = "D0001" }: { driverId?: 
         </div>
 
         {/* Claims history — validates the DriveScore */}
-        <div className="card p-8">
+        <div className="card p-8 mb-6 break-inside-avoid">
           <ClaimsHistory driverId={driver.id} drivescore={price.drivescore} />
         </div>
+      </div>
 
-        {/* AI coach — full width across the grid */}
-        <div className="card p-8 flex flex-col lg:col-span-2">
-          <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-            <span style={{ color: theme.color.accent }}>◆</span> Your DriveScore coach
-          </h2>
-          <div className="flex-1 lg:grid lg:grid-cols-2 lg:gap-6 lg:items-start">
-            <StreamingText text={explainText} streaming={streaming} />
-            <div
-              className="mt-5 lg:mt-0 p-4 rounded-xl text-sm"
-              style={{ background: `${theme.color.accent}10`, border: `1px solid ${theme.color.accent}33` }}
-            >
-              <div className="text-accent2 font-semibold mb-1">Savings opportunity</div>
-              <div className="text-text opacity-90">{savingMsg}</div>
-            </div>
+      {/* AI coach — full width below the cards */}
+      <div className="card p-8 flex flex-col">
+        <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+          <span style={{ color: theme.color.accent }}>◆</span> Your DriveScore coach
+        </h2>
+        <div className="flex-1 lg:grid lg:grid-cols-2 lg:gap-6 lg:items-start">
+          <StreamingText text={explainText} streaming={streaming} />
+          <div
+            className="mt-5 lg:mt-0 p-4 rounded-xl text-sm"
+            style={{ background: `${theme.color.accent}10`, border: `1px solid ${theme.color.accent}33` }}
+          >
+            <div className="text-accent2 font-semibold mb-1">Savings opportunity</div>
+            <div className="text-text opacity-90">{savingMsg}</div>
           </div>
         </div>
       </div>
