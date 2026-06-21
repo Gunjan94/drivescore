@@ -1,0 +1,8402 @@
+[
+  {
+    "id": "D0001",
+    "name": "Sarah Chen",
+    "age": 41,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.06,
+      "monthly_km": 1900,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0002",
+    "name": "Marcus Reid",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 100,
+      "hard_brakes_per_100km": 8.8,
+      "night_pct": 0.18,
+      "monthly_km": 2000,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0003",
+    "name": "Priya N.",
+    "age": 35,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 102,
+      "hard_brakes_per_100km": 2.8,
+      "night_pct": 0.09,
+      "monthly_km": 1500,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0004",
+    "name": "Chloe Walker",
+    "age": 45,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.2,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.058,
+      "monthly_km": 1074,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0005",
+    "name": "Sarah Nair",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 56.4,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.085,
+      "monthly_km": 864,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0006",
+    "name": "Ava Ali",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.6,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.051,
+      "monthly_km": 590,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0007",
+    "name": "Priya Garcia",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.5,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.083,
+      "monthly_km": 403,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0008",
+    "name": "Kai Garcia",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.9,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.007,
+      "monthly_km": 389,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0009",
+    "name": "Layla Patel",
+    "age": 63,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.0,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.045,
+      "monthly_km": 864,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0010",
+    "name": "Hiro Sato",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.8,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.09,
+      "monthly_km": 597,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0011",
+    "name": "Ava Garcia",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.4,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.118,
+      "monthly_km": 661,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0012",
+    "name": "Nina Reid",
+    "age": 52,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.4,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.111,
+      "monthly_km": 916,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0013",
+    "name": "Ruby Kumar",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 61.4,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.037,
+      "monthly_km": 952,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0014",
+    "name": "Ruby Ali",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 61.7,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.086,
+      "monthly_km": 716,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0015",
+    "name": "Felix Taylor",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.7,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.055,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0016",
+    "name": "Arjun Adams",
+    "age": 52,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.3,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.05,
+      "monthly_km": 344,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0017",
+    "name": "Tom Evans",
+    "age": 45,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.8,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.0,
+      "monthly_km": 740,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0018",
+    "name": "Mei Sato",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.4,
+      "hard_brakes_per_100km": 0.6,
+      "night_pct": 0.057,
+      "monthly_km": 454,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0019",
+    "name": "Ruby Diaz",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.0,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.029,
+      "monthly_km": 736,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0020",
+    "name": "Nina Nair",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.9,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.081,
+      "monthly_km": 950,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0021",
+    "name": "Kai Silva",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.2,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.004,
+      "monthly_km": 669,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0022",
+    "name": "Ruby Murphy",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 61.1,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.056,
+      "monthly_km": 738,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0023",
+    "name": "Noah Nair",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.2,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.017,
+      "monthly_km": 866,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0024",
+    "name": "Mateo Tan",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.6,
+      "hard_brakes_per_100km": 0.2,
+      "night_pct": 0.03,
+      "monthly_km": 644,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0025",
+    "name": "Hiro Lee",
+    "age": 41,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.7,
+      "hard_brakes_per_100km": 0.3,
+      "night_pct": 0.082,
+      "monthly_km": 1022,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0026",
+    "name": "Sofia Adams",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 59.8,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.05,
+      "monthly_km": 863,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0027",
+    "name": "Omar Kumar",
+    "age": 41,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.3,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.075,
+      "monthly_km": 782,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0028",
+    "name": "Kai Costa",
+    "age": 63,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.4,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.029,
+      "monthly_km": 734,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0029",
+    "name": "Olivia Kumar",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.8,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.018,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0030",
+    "name": "Aisha Patel",
+    "age": 63,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.3,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.049,
+      "monthly_km": 642,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0031",
+    "name": "Isla Nair",
+    "age": 63,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.2,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.041,
+      "monthly_km": 1118,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0032",
+    "name": "Zara Clarke",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.6,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.029,
+      "monthly_km": 483,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0033",
+    "name": "Olivia Garcia",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 66.8,
+      "hard_brakes_per_100km": 1.9,
+      "night_pct": 0.082,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0034",
+    "name": "Ethan Ali",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.6,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.055,
+      "monthly_km": 888,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0035",
+    "name": "Liam Brown",
+    "age": 41,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60.6,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.01,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0036",
+    "name": "Kai Taylor",
+    "age": 58,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.5,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.044,
+      "monthly_km": 1180,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0037",
+    "name": "Aisha Taylor",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 61.7,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.032,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0038",
+    "name": "Nina Rossi",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.5,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.107,
+      "monthly_km": 1170,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0039",
+    "name": "James Nair",
+    "age": 58,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.7,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.034,
+      "monthly_km": 755,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0040",
+    "name": "Mei Reid",
+    "age": 52,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60.9,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.067,
+      "monthly_km": 301,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0041",
+    "name": "Layla Silva",
+    "age": 52,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.4,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.03,
+      "monthly_km": 627,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0042",
+    "name": "Ruby Lee",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.5,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.016,
+      "monthly_km": 1162,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0043",
+    "name": "Felix Nguyen",
+    "age": 63,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 56.4,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.088,
+      "monthly_km": 818,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0044",
+    "name": "Nina Park",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 66.0,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.034,
+      "monthly_km": 533,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0045",
+    "name": "Arjun Diaz",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.5,
+      "hard_brakes_per_100km": 0.2,
+      "night_pct": 0.034,
+      "monthly_km": 1157,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0046",
+    "name": "James Clarke",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.1,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.034,
+      "monthly_km": 997,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0047",
+    "name": "Marcus Nguyen",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.7,
+      "hard_brakes_per_100km": 0.6,
+      "night_pct": 0.064,
+      "monthly_km": 837,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0048",
+    "name": "Daniel Nair",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 72.5,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.018,
+      "monthly_km": 493,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0049",
+    "name": "Emma Garcia",
+    "age": 63,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.1,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.014,
+      "monthly_km": 836,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0050",
+    "name": "Sofia Silva",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.7,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.063,
+      "monthly_km": 1094,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0051",
+    "name": "Isla Wong",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 61.8,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.0,
+      "monthly_km": 692,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0052",
+    "name": "Nina Costa",
+    "age": 48,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.3,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.056,
+      "monthly_km": 604,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0053",
+    "name": "Daniel Evans",
+    "age": 52,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.3,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.036,
+      "monthly_km": 635,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0054",
+    "name": "Ruby Costa",
+    "age": 63,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 69.3,
+      "hard_brakes_per_100km": 0.3,
+      "night_pct": 0.054,
+      "monthly_km": 568,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0055",
+    "name": "Kai Hassan",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.2,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.061,
+      "monthly_km": 456,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0056",
+    "name": "Ethan Diaz",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.1,
+      "hard_brakes_per_100km": 0.6,
+      "night_pct": 0.068,
+      "monthly_km": 478,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0057",
+    "name": "Layla Smith",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60.0,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.03,
+      "monthly_km": 764,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0058",
+    "name": "Priya Nguyen",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 63.3,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.034,
+      "monthly_km": 968,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0059",
+    "name": "Priya Lee",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.2,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.071,
+      "monthly_km": 591,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0060",
+    "name": "Omar Evans",
+    "age": 63,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.4,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.078,
+      "monthly_km": 728,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0061",
+    "name": "Noah Rossi",
+    "age": 63,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 56.2,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.053,
+      "monthly_km": 549,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0062",
+    "name": "Kai Tan",
+    "age": 63,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.9,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.083,
+      "monthly_km": 557,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0063",
+    "name": "Liam Reid",
+    "age": 63,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.6,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.077,
+      "monthly_km": 528,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0064",
+    "name": "Olivia Diaz",
+    "age": 41,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.7,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.0,
+      "monthly_km": 487,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0065",
+    "name": "Noah Khan",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.7,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.015,
+      "monthly_km": 738,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0066",
+    "name": "Grace Rossi",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.3,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.011,
+      "monthly_km": 492,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0067",
+    "name": "Kai Patel",
+    "age": 52,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.9,
+      "hard_brakes_per_100km": 0.2,
+      "night_pct": 0.02,
+      "monthly_km": 349,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0068",
+    "name": "James Nguyen",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.1,
+      "hard_brakes_per_100km": 0.2,
+      "night_pct": 0.038,
+      "monthly_km": 654,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0069",
+    "name": "Priya Murphy",
+    "age": 63,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.3,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.046,
+      "monthly_km": 496,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0070",
+    "name": "Grace Tan",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.0,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.073,
+      "monthly_km": 682,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0071",
+    "name": "Nina Adams",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 59.4,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.035,
+      "monthly_km": 735,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0072",
+    "name": "Layla Brown",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.6,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.032,
+      "monthly_km": 940,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0073",
+    "name": "Olivia Evans",
+    "age": 52,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.1,
+      "hard_brakes_per_100km": 0.3,
+      "night_pct": 0.015,
+      "monthly_km": 471,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0074",
+    "name": "Tom Lee",
+    "age": 45,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 57.3,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.034,
+      "monthly_km": 425,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0075",
+    "name": "Sofia Nguyen",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.4,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.094,
+      "monthly_km": 530,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0076",
+    "name": "Hiro Nguyen",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 60.7,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.056,
+      "monthly_km": 1069,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0077",
+    "name": "Aisha Adams",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.0,
+      "hard_brakes_per_100km": 0.3,
+      "night_pct": 0.055,
+      "monthly_km": 985,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0078",
+    "name": "Raj Smith",
+    "age": 58,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 61.8,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.046,
+      "monthly_km": 609,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0079",
+    "name": "James Hassan",
+    "age": 45,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.4,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.052,
+      "monthly_km": 521,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0080",
+    "name": "James Diaz",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.3,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.01,
+      "monthly_km": 564,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0081",
+    "name": "James Silva",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.0,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.009,
+      "monthly_km": 760,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0082",
+    "name": "Kai Brown",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.4,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.015,
+      "monthly_km": 843,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0083",
+    "name": "Olivia Taylor",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.8,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.061,
+      "monthly_km": 598,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0084",
+    "name": "Raj Reid",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.7,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.04,
+      "monthly_km": 488,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0085",
+    "name": "James Silva",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 55.6,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.067,
+      "monthly_km": 708,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0086",
+    "name": "Ethan Adams",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.1,
+      "hard_brakes_per_100km": 0.2,
+      "night_pct": 0.019,
+      "monthly_km": 812,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0087",
+    "name": "Priya Clarke",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.8,
+      "hard_brakes_per_100km": 1.9,
+      "night_pct": 0.058,
+      "monthly_km": 647,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0088",
+    "name": "Layla Taylor",
+    "age": 58,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 66.3,
+      "hard_brakes_per_100km": 0.6,
+      "night_pct": 0.052,
+      "monthly_km": 584,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0089",
+    "name": "Chloe Diaz",
+    "age": 41,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 63.5,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.051,
+      "monthly_km": 606,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0090",
+    "name": "Emma Lee",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.9,
+      "hard_brakes_per_100km": 0.8,
+      "night_pct": 0.102,
+      "monthly_km": 584,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0091",
+    "name": "James Costa",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.6,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.07,
+      "monthly_km": 1041,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0092",
+    "name": "Marcus Khan",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.5,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.018,
+      "monthly_km": 722,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0093",
+    "name": "Ruby Nguyen",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.0,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.051,
+      "monthly_km": 450,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0094",
+    "name": "Mateo Chen",
+    "age": 52,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.3,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.116,
+      "monthly_km": 696,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0095",
+    "name": "Isla Nguyen",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.5,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.106,
+      "monthly_km": 883,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0096",
+    "name": "Aisha Kumar",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 58.6,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.057,
+      "monthly_km": 783,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0097",
+    "name": "Raj Adams",
+    "age": 52,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 56.2,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.088,
+      "monthly_km": 975,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0098",
+    "name": "Hiro Jones",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 59.3,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.025,
+      "monthly_km": 774,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0099",
+    "name": "Omar Costa",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 69.7,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.064,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0100",
+    "name": "Wei Reid",
+    "age": 63,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 71.3,
+      "hard_brakes_per_100km": 2.4,
+      "night_pct": 0.043,
+      "monthly_km": 808,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0101",
+    "name": "Daniel Hassan",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.5,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.036,
+      "monthly_km": 250,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0102",
+    "name": "Omar Jones",
+    "age": 48,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.8,
+      "hard_brakes_per_100km": 0.3,
+      "night_pct": 0.031,
+      "monthly_km": 851,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0103",
+    "name": "Noah Singh",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 57.4,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.027,
+      "monthly_km": 734,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0104",
+    "name": "Liam Nguyen",
+    "age": 52,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 63.7,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.045,
+      "monthly_km": 787,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0105",
+    "name": "Liam O'Brien",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.3,
+      "hard_brakes_per_100km": 2.4,
+      "night_pct": 0.079,
+      "monthly_km": 601,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0106",
+    "name": "Ava Singh",
+    "age": 52,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.9,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.104,
+      "monthly_km": 743,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0107",
+    "name": "Hiro Ali",
+    "age": 58,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60.5,
+      "hard_brakes_per_100km": 0.8,
+      "night_pct": 0.123,
+      "monthly_km": 631,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0108",
+    "name": "Omar Wong",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.1,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.034,
+      "monthly_km": 863,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0109",
+    "name": "Sarah Ali",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.2,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.011,
+      "monthly_km": 1197,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0110",
+    "name": "Layla Park",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.9,
+      "hard_brakes_per_100km": 2.4,
+      "night_pct": 0.054,
+      "monthly_km": 860,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0111",
+    "name": "Ruby Singh",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.7,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.029,
+      "monthly_km": 450,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0112",
+    "name": "Kai Patel",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.1,
+      "hard_brakes_per_100km": 1.9,
+      "night_pct": 0.066,
+      "monthly_km": 1088,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0113",
+    "name": "Olivia Kumar",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 61.3,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.019,
+      "monthly_km": 847,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0114",
+    "name": "Priya Tan",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.1,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.03,
+      "monthly_km": 425,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0115",
+    "name": "Felix Garcia",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.6,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.053,
+      "monthly_km": 404,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0116",
+    "name": "Nina Singh",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.8,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.051,
+      "monthly_km": 769,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0117",
+    "name": "Chloe Diaz",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60.6,
+      "hard_brakes_per_100km": 0.4,
+      "night_pct": 0.06,
+      "monthly_km": 655,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0118",
+    "name": "Wei Walker",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.8,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.072,
+      "monthly_km": 902,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0119",
+    "name": "Ruby Lee",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.2,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.003,
+      "monthly_km": 331,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0120",
+    "name": "Aisha Brown",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 61.2,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.0,
+      "monthly_km": 1190,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0121",
+    "name": "Sofia Rossi",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.4,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.064,
+      "monthly_km": 860,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0122",
+    "name": "Marcus Park",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 58.0,
+      "hard_brakes_per_100km": 2.9,
+      "night_pct": 0.055,
+      "monthly_km": 575,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0123",
+    "name": "Emma Costa",
+    "age": 52,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 59.5,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.102,
+      "monthly_km": 1155,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0124",
+    "name": "Felix O'Brien",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.2,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.069,
+      "monthly_km": 873,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0125",
+    "name": "Marcus Tan",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 58.8,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.013,
+      "monthly_km": 713,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0126",
+    "name": "Isla Smith",
+    "age": 45,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.1,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.062,
+      "monthly_km": 288,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0127",
+    "name": "Omar Garcia",
+    "age": 45,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 63.4,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.056,
+      "monthly_km": 664,
+      "harsh_corners_per_100km": 0.3
+    }
+  },
+  {
+    "id": "D0128",
+    "name": "Priya Tan",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 63.1,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.025,
+      "monthly_km": 662,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0129",
+    "name": "Felix Nguyen",
+    "age": 52,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.8,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.079,
+      "monthly_km": 920,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0130",
+    "name": "Ruby Smith",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 57.6,
+      "hard_brakes_per_100km": 1.9,
+      "night_pct": 0.011,
+      "monthly_km": 931,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0131",
+    "name": "Arjun Kumar",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.2,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.052,
+      "monthly_km": 921,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0132",
+    "name": "Mateo Reid",
+    "age": 63,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 59.6,
+      "hard_brakes_per_100km": 0.9,
+      "night_pct": 0.043,
+      "monthly_km": 819,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0133",
+    "name": "Ethan Patel",
+    "age": 52,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.7,
+      "hard_brakes_per_100km": 0.8,
+      "night_pct": 0.082,
+      "monthly_km": 795,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0134",
+    "name": "Omar Silva",
+    "age": 48,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 59.4,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.001,
+      "monthly_km": 541,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0135",
+    "name": "Sarah O'Brien",
+    "age": 52,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 55.0,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.1,
+      "monthly_km": 900,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0136",
+    "name": "Priya Tan",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.4,
+      "hard_brakes_per_100km": 0.2,
+      "night_pct": 0.081,
+      "monthly_km": 867,
+      "harsh_corners_per_100km": 0.4
+    }
+  },
+  {
+    "id": "D0137",
+    "name": "Tom Jones",
+    "age": 52,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.1,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.012,
+      "monthly_km": 782,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0138",
+    "name": "Olivia Brown",
+    "age": 63,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 61.6,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.028,
+      "monthly_km": 783,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0139",
+    "name": "Arjun Taylor",
+    "age": 48,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.0,
+      "hard_brakes_per_100km": 0.7,
+      "night_pct": 0.03,
+      "monthly_km": 664,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0140",
+    "name": "Aisha Patel",
+    "age": 63,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.4,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.052,
+      "monthly_km": 539,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0141",
+    "name": "Sofia Silva",
+    "age": 45,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.2,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.016,
+      "monthly_km": 919,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0142",
+    "name": "Daniel Chen",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.4,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.038,
+      "monthly_km": 935,
+      "harsh_corners_per_100km": 0.2
+    }
+  },
+  {
+    "id": "D0143",
+    "name": "Sarah Jones",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.2,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.114,
+      "monthly_km": 394,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0144",
+    "name": "Omar Walker",
+    "age": 58,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.2,
+      "hard_brakes_per_100km": 2.1,
+      "night_pct": 0.02,
+      "monthly_km": 687,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0145",
+    "name": "Isla Singh",
+    "age": 41,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.4,
+      "hard_brakes_per_100km": 1.8,
+      "night_pct": 0.074,
+      "monthly_km": 889,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0146",
+    "name": "James Tan",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 63.9,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.079,
+      "monthly_km": 1024,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0147",
+    "name": "Layla Ali",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.5,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.017,
+      "monthly_km": 972,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0148",
+    "name": "Mei Brown",
+    "age": 58,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.9,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.042,
+      "monthly_km": 887,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0149",
+    "name": "Marcus Reid",
+    "age": 45,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 65.6,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.068,
+      "monthly_km": 348,
+      "harsh_corners_per_100km": 0.1
+    }
+  },
+  {
+    "id": "D0150",
+    "name": "Zara Silva",
+    "age": 48,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.3,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.114,
+      "monthly_km": 843,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0151",
+    "name": "Marcus Brown",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.9,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.089,
+      "monthly_km": 527,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0152",
+    "name": "Noah Nguyen",
+    "age": 63,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 60.0,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.033,
+      "monthly_km": 702,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0153",
+    "name": "Felix Singh",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.3,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.041,
+      "monthly_km": 995,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0154",
+    "name": "Emma Nair",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 98.2,
+      "hard_brakes_per_100km": 6.6,
+      "night_pct": 0.257,
+      "monthly_km": 2749,
+      "harsh_corners_per_100km": 4.4
+    }
+  },
+  {
+    "id": "D0155",
+    "name": "Mateo Garcia",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 94.4,
+      "hard_brakes_per_100km": 6.1,
+      "night_pct": 0.324,
+      "monthly_km": 2333,
+      "harsh_corners_per_100km": 6.3
+    }
+  },
+  {
+    "id": "D0156",
+    "name": "Isla Sato",
+    "age": 31,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 108.8,
+      "hard_brakes_per_100km": 7.2,
+      "night_pct": 0.45,
+      "monthly_km": 1790,
+      "harsh_corners_per_100km": 4.9
+    }
+  },
+  {
+    "id": "D0157",
+    "name": "Raj Hassan",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 96.8,
+      "hard_brakes_per_100km": 7.5,
+      "night_pct": 0.287,
+      "monthly_km": 1265,
+      "harsh_corners_per_100km": 4.3
+    }
+  },
+  {
+    "id": "D0158",
+    "name": "Ruby Costa",
+    "age": 31,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 94.0,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.409,
+      "monthly_km": 2108,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0159",
+    "name": "Daniel Sato",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 91.5,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.327,
+      "monthly_km": 1592,
+      "harsh_corners_per_100km": 5.2
+    }
+  },
+  {
+    "id": "D0160",
+    "name": "Raj Park",
+    "age": 34,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 105.7,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.422,
+      "monthly_km": 2466,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0161",
+    "name": "Liam Diaz",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 98.3,
+      "hard_brakes_per_100km": 7.7,
+      "night_pct": 0.484,
+      "monthly_km": 1991,
+      "harsh_corners_per_100km": 4.5
+    }
+  },
+  {
+    "id": "D0162",
+    "name": "Grace Hassan",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 97.9,
+      "hard_brakes_per_100km": 6.9,
+      "night_pct": 0.421,
+      "monthly_km": 2019,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0163",
+    "name": "Nina Brown",
+    "age": 34,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 105.0,
+      "hard_brakes_per_100km": 9.8,
+      "night_pct": 0.258,
+      "monthly_km": 1554,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0164",
+    "name": "Priya Sato",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 103.1,
+      "hard_brakes_per_100km": 8.4,
+      "night_pct": 0.483,
+      "monthly_km": 2269,
+      "harsh_corners_per_100km": 4.4
+    }
+  },
+  {
+    "id": "D0165",
+    "name": "Grace Diaz",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 105.9,
+      "hard_brakes_per_100km": 8.6,
+      "night_pct": 0.476,
+      "monthly_km": 1861,
+      "harsh_corners_per_100km": 4.8
+    }
+  },
+  {
+    "id": "D0166",
+    "name": "Aisha Diaz",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 113.2,
+      "hard_brakes_per_100km": 10.1,
+      "night_pct": 0.315,
+      "monthly_km": 1635,
+      "harsh_corners_per_100km": 5.0
+    }
+  },
+  {
+    "id": "D0167",
+    "name": "Daniel Singh",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 96.2,
+      "hard_brakes_per_100km": 7.5,
+      "night_pct": 0.295,
+      "monthly_km": 2566,
+      "harsh_corners_per_100km": 6.6
+    }
+  },
+  {
+    "id": "D0168",
+    "name": "Grace Tan",
+    "age": 38,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 101.9,
+      "hard_brakes_per_100km": 7.1,
+      "night_pct": 0.317,
+      "monthly_km": 2315,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0169",
+    "name": "Isla Silva",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 113.0,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.369,
+      "monthly_km": 1525,
+      "harsh_corners_per_100km": 4.4
+    }
+  },
+  {
+    "id": "D0170",
+    "name": "Hiro Rossi",
+    "age": 38,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 101.9,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.434,
+      "monthly_km": 2022,
+      "harsh_corners_per_100km": 4.5
+    }
+  },
+  {
+    "id": "D0171",
+    "name": "Marcus Sato",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 98.9,
+      "hard_brakes_per_100km": 4.2,
+      "night_pct": 0.338,
+      "monthly_km": 2215,
+      "harsh_corners_per_100km": 6.8
+    }
+  },
+  {
+    "id": "D0172",
+    "name": "Felix Tan",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 114.8,
+      "hard_brakes_per_100km": 8.1,
+      "night_pct": 0.316,
+      "monthly_km": 1988,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0173",
+    "name": "Isla Garcia",
+    "age": 31,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 103.5,
+      "hard_brakes_per_100km": 9.0,
+      "night_pct": 0.373,
+      "monthly_km": 1886,
+      "harsh_corners_per_100km": 7.0
+    }
+  },
+  {
+    "id": "D0174",
+    "name": "Omar Costa",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 113.2,
+      "hard_brakes_per_100km": 7.7,
+      "night_pct": 0.359,
+      "monthly_km": 2609,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0175",
+    "name": "Liam Wong",
+    "age": 27,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 105.1,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.308,
+      "monthly_km": 1992,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0176",
+    "name": "Daniel Clarke",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 107.0,
+      "hard_brakes_per_100km": 7.0,
+      "night_pct": 0.37,
+      "monthly_km": 2079,
+      "harsh_corners_per_100km": 4.3
+    }
+  },
+  {
+    "id": "D0177",
+    "name": "Grace Brown",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 107.9,
+      "hard_brakes_per_100km": 6.7,
+      "night_pct": 0.399,
+      "monthly_km": 2155,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0178",
+    "name": "Priya Taylor",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 97.1,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.418,
+      "monthly_km": 1327,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0179",
+    "name": "Mei Nair",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 100.7,
+      "hard_brakes_per_100km": 7.2,
+      "night_pct": 0.495,
+      "monthly_km": 1267,
+      "harsh_corners_per_100km": 7.2
+    }
+  },
+  {
+    "id": "D0180",
+    "name": "Hiro Sato",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.0,
+      "hard_brakes_per_100km": 7.2,
+      "night_pct": 0.43,
+      "monthly_km": 2191,
+      "harsh_corners_per_100km": 4.4
+    }
+  },
+  {
+    "id": "D0181",
+    "name": "Wei Murphy",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 107.9,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.447,
+      "monthly_km": 1877,
+      "harsh_corners_per_100km": 5.8
+    }
+  },
+  {
+    "id": "D0182",
+    "name": "Grace Kumar",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 107.3,
+      "hard_brakes_per_100km": 7.0,
+      "night_pct": 0.401,
+      "monthly_km": 2018,
+      "harsh_corners_per_100km": 5.8
+    }
+  },
+  {
+    "id": "D0183",
+    "name": "Grace Nair",
+    "age": 31,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 113.2,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.36,
+      "monthly_km": 1828,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0184",
+    "name": "James Khan",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 103.5,
+      "hard_brakes_per_100km": 5.9,
+      "night_pct": 0.304,
+      "monthly_km": 1914,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0185",
+    "name": "Priya Patel",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 98.1,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.456,
+      "monthly_km": 1492,
+      "harsh_corners_per_100km": 5.0
+    }
+  },
+  {
+    "id": "D0186",
+    "name": "Emma Singh",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 110.0,
+      "hard_brakes_per_100km": 7.8,
+      "night_pct": 0.338,
+      "monthly_km": 1877,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0187",
+    "name": "Daniel Murphy",
+    "age": 31,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 93.1,
+      "hard_brakes_per_100km": 7.5,
+      "night_pct": 0.366,
+      "monthly_km": 2064,
+      "harsh_corners_per_100km": 5.3
+    }
+  },
+  {
+    "id": "D0188",
+    "name": "Kai Nguyen",
+    "age": 38,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 105.0,
+      "hard_brakes_per_100km": 10.8,
+      "night_pct": 0.315,
+      "monthly_km": 1861,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0189",
+    "name": "Chloe Patel",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 104.5,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.357,
+      "monthly_km": 1561,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0190",
+    "name": "Arjun Clarke",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 100.0,
+      "hard_brakes_per_100km": 4.9,
+      "night_pct": 0.437,
+      "monthly_km": 1470,
+      "harsh_corners_per_100km": 4.9
+    }
+  },
+  {
+    "id": "D0191",
+    "name": "Layla Ali",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 100.3,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.437,
+      "monthly_km": 1338,
+      "harsh_corners_per_100km": 4.8
+    }
+  },
+  {
+    "id": "D0192",
+    "name": "Noah Park",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 104.9,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.263,
+      "monthly_km": 2076,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0193",
+    "name": "Ethan Tan",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.9,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.498,
+      "monthly_km": 1821,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0194",
+    "name": "Isla Silva",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 106.7,
+      "hard_brakes_per_100km": 7.7,
+      "night_pct": 0.443,
+      "monthly_km": 2204,
+      "harsh_corners_per_100km": 5.1
+    }
+  },
+  {
+    "id": "D0195",
+    "name": "Omar Evans",
+    "age": 31,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 104.0,
+      "hard_brakes_per_100km": 7.8,
+      "night_pct": 0.44,
+      "monthly_km": 1594,
+      "harsh_corners_per_100km": 4.3
+    }
+  },
+  {
+    "id": "D0196",
+    "name": "Wei Evans",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 101.4,
+      "hard_brakes_per_100km": 7.3,
+      "night_pct": 0.469,
+      "monthly_km": 1740,
+      "harsh_corners_per_100km": 5.7
+    }
+  },
+  {
+    "id": "D0197",
+    "name": "Raj Wong",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 100.8,
+      "hard_brakes_per_100km": 4.5,
+      "night_pct": 0.291,
+      "monthly_km": 1746,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0198",
+    "name": "Mei Evans",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 101.3,
+      "hard_brakes_per_100km": 8.5,
+      "night_pct": 0.36,
+      "monthly_km": 1970,
+      "harsh_corners_per_100km": 6.4
+    }
+  },
+  {
+    "id": "D0199",
+    "name": "Sofia Murphy",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 105.2,
+      "hard_brakes_per_100km": 5.1,
+      "night_pct": 0.411,
+      "monthly_km": 2155,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0200",
+    "name": "James Garcia",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 85.5,
+      "hard_brakes_per_100km": 10.4,
+      "night_pct": 0.309,
+      "monthly_km": 1764,
+      "harsh_corners_per_100km": 5.9
+    }
+  },
+  {
+    "id": "D0201",
+    "name": "Marcus Tan",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 110.6,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.239,
+      "monthly_km": 1675,
+      "harsh_corners_per_100km": 4.7
+    }
+  },
+  {
+    "id": "D0202",
+    "name": "Kai Clarke",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 98.7,
+      "hard_brakes_per_100km": 8.5,
+      "night_pct": 0.266,
+      "monthly_km": 1386,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0203",
+    "name": "Wei Diaz",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 96.7,
+      "hard_brakes_per_100km": 8.4,
+      "night_pct": 0.387,
+      "monthly_km": 2221,
+      "harsh_corners_per_100km": 5.7
+    }
+  },
+  {
+    "id": "D0204",
+    "name": "Olivia Singh",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 104.8,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.267,
+      "monthly_km": 1600,
+      "harsh_corners_per_100km": 4.1
+    }
+  },
+  {
+    "id": "D0205",
+    "name": "Nina Taylor",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 99.5,
+      "hard_brakes_per_100km": 7.1,
+      "night_pct": 0.484,
+      "monthly_km": 1820,
+      "harsh_corners_per_100km": 4.0
+    }
+  },
+  {
+    "id": "D0206",
+    "name": "Mei Lee",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.0,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.408,
+      "monthly_km": 1011,
+      "harsh_corners_per_100km": 6.3
+    }
+  },
+  {
+    "id": "D0207",
+    "name": "Mateo Jones",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 92.6,
+      "hard_brakes_per_100km": 8.8,
+      "night_pct": 0.379,
+      "monthly_km": 1183,
+      "harsh_corners_per_100km": 7.1
+    }
+  },
+  {
+    "id": "D0208",
+    "name": "Arjun Costa",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 110.1,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.401,
+      "monthly_km": 1604,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0209",
+    "name": "Raj Costa",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 104.0,
+      "hard_brakes_per_100km": 6.7,
+      "night_pct": 0.433,
+      "monthly_km": 1803,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0210",
+    "name": "James Ali",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 98.5,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.527,
+      "monthly_km": 1808,
+      "harsh_corners_per_100km": 7.1
+    }
+  },
+  {
+    "id": "D0211",
+    "name": "Grace Nair",
+    "age": 31,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 97.9,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.451,
+      "monthly_km": 1882,
+      "harsh_corners_per_100km": 6.3
+    }
+  },
+  {
+    "id": "D0212",
+    "name": "Mei Walker",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 94.1,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.386,
+      "monthly_km": 2495,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0213",
+    "name": "Emma Nguyen",
+    "age": 31,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 99.8,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.401,
+      "monthly_km": 2571,
+      "harsh_corners_per_100km": 7.4
+    }
+  },
+  {
+    "id": "D0214",
+    "name": "Wei Singh",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 108.4,
+      "hard_brakes_per_100km": 10.9,
+      "night_pct": 0.33,
+      "monthly_km": 2420,
+      "harsh_corners_per_100km": 5.3
+    }
+  },
+  {
+    "id": "D0215",
+    "name": "Kai Kumar",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 100.1,
+      "hard_brakes_per_100km": 8.5,
+      "night_pct": 0.527,
+      "monthly_km": 2304,
+      "harsh_corners_per_100km": 7.4
+    }
+  },
+  {
+    "id": "D0216",
+    "name": "Kai Adams",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 119.7,
+      "hard_brakes_per_100km": 6.1,
+      "night_pct": 0.388,
+      "monthly_km": 1862,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0217",
+    "name": "Chloe Silva",
+    "age": 34,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 100.4,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.354,
+      "monthly_km": 2215,
+      "harsh_corners_per_100km": 5.9
+    }
+  },
+  {
+    "id": "D0218",
+    "name": "Emma O'Brien",
+    "age": 31,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 100.6,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.377,
+      "monthly_km": 1834,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0219",
+    "name": "Nina Lee",
+    "age": 31,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 107.7,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.377,
+      "monthly_km": 1776,
+      "harsh_corners_per_100km": 4.1
+    }
+  },
+  {
+    "id": "D0220",
+    "name": "Kai Smith",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 109.9,
+      "hard_brakes_per_100km": 7.1,
+      "night_pct": 0.32,
+      "monthly_km": 2004,
+      "harsh_corners_per_100km": 4.0
+    }
+  },
+  {
+    "id": "D0221",
+    "name": "Chloe Sato",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 111.3,
+      "hard_brakes_per_100km": 6.8,
+      "night_pct": 0.353,
+      "monthly_km": 2152,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0222",
+    "name": "Chloe Kumar",
+    "age": 38,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 109.1,
+      "hard_brakes_per_100km": 6.4,
+      "night_pct": 0.417,
+      "monthly_km": 2800,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0223",
+    "name": "Grace Silva",
+    "age": 31,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 103.2,
+      "hard_brakes_per_100km": 9.3,
+      "night_pct": 0.31,
+      "monthly_km": 2140,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0224",
+    "name": "Isla Nguyen",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 90.5,
+      "hard_brakes_per_100km": 9.7,
+      "night_pct": 0.494,
+      "monthly_km": 2387,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0225",
+    "name": "Emma Hassan",
+    "age": 27,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 98.9,
+      "hard_brakes_per_100km": 6.2,
+      "night_pct": 0.375,
+      "monthly_km": 2046,
+      "harsh_corners_per_100km": 6.5
+    }
+  },
+  {
+    "id": "D0226",
+    "name": "Ava Tan",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 93.2,
+      "hard_brakes_per_100km": 6.9,
+      "night_pct": 0.463,
+      "monthly_km": 2058,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0227",
+    "name": "Tom Khan",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.0,
+      "hard_brakes_per_100km": 6.6,
+      "night_pct": 0.368,
+      "monthly_km": 1819,
+      "harsh_corners_per_100km": 5.2
+    }
+  },
+  {
+    "id": "D0228",
+    "name": "Marcus Patel",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.5,
+      "hard_brakes_per_100km": 8.5,
+      "night_pct": 0.402,
+      "monthly_km": 900,
+      "harsh_corners_per_100km": 4.0
+    }
+  },
+  {
+    "id": "D0229",
+    "name": "Sofia Nair",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 95.4,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.273,
+      "monthly_km": 1335,
+      "harsh_corners_per_100km": 4.3
+    }
+  },
+  {
+    "id": "D0230",
+    "name": "Mateo Garcia",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.3,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.381,
+      "monthly_km": 1933,
+      "harsh_corners_per_100km": 5.9
+    }
+  },
+  {
+    "id": "D0231",
+    "name": "Nina Smith",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 103.0,
+      "hard_brakes_per_100km": 7.0,
+      "night_pct": 0.454,
+      "monthly_km": 1749,
+      "harsh_corners_per_100km": 7.5
+    }
+  },
+  {
+    "id": "D0232",
+    "name": "Ethan Costa",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 117.4,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.382,
+      "monthly_km": 2049,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0233",
+    "name": "Sofia Brown",
+    "age": 38,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 97.2,
+      "hard_brakes_per_100km": 7.1,
+      "night_pct": 0.436,
+      "monthly_km": 1989,
+      "harsh_corners_per_100km": 4.5
+    }
+  },
+  {
+    "id": "D0234",
+    "name": "Nina Kumar",
+    "age": 31,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 101.2,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.282,
+      "monthly_km": 1555,
+      "harsh_corners_per_100km": 4.3
+    }
+  },
+  {
+    "id": "D0235",
+    "name": "Raj Rossi",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 108.1,
+      "hard_brakes_per_100km": 10.6,
+      "night_pct": 0.453,
+      "monthly_km": 2541,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0236",
+    "name": "Hiro Singh",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 95.3,
+      "hard_brakes_per_100km": 4.5,
+      "night_pct": 0.345,
+      "monthly_km": 2277,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0237",
+    "name": "Omar Smith",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.3,
+      "hard_brakes_per_100km": 6.2,
+      "night_pct": 0.499,
+      "monthly_km": 2205,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0238",
+    "name": "Mateo Murphy",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 106.0,
+      "hard_brakes_per_100km": 7.9,
+      "night_pct": 0.413,
+      "monthly_km": 2452,
+      "harsh_corners_per_100km": 7.0
+    }
+  },
+  {
+    "id": "D0239",
+    "name": "Olivia Garcia",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 94.7,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.284,
+      "monthly_km": 2081,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0240",
+    "name": "Aisha Hassan",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 107.7,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.426,
+      "monthly_km": 1751,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0241",
+    "name": "Sofia Kumar",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 114.2,
+      "hard_brakes_per_100km": 7.1,
+      "night_pct": 0.45,
+      "monthly_km": 1808,
+      "harsh_corners_per_100km": 6.2
+    }
+  },
+  {
+    "id": "D0242",
+    "name": "Hiro Murphy",
+    "age": 31,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.6,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.422,
+      "monthly_km": 1295,
+      "harsh_corners_per_100km": 4.9
+    }
+  },
+  {
+    "id": "D0243",
+    "name": "Daniel Reid",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 95.0,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.358,
+      "monthly_km": 2089,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0244",
+    "name": "Mei Khan",
+    "age": 34,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 98.2,
+      "hard_brakes_per_100km": 8.4,
+      "night_pct": 0.427,
+      "monthly_km": 1493,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0245",
+    "name": "Ava O'Brien",
+    "age": 31,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 92.0,
+      "hard_brakes_per_100km": 6.8,
+      "night_pct": 0.306,
+      "monthly_km": 2221,
+      "harsh_corners_per_100km": 6.1
+    }
+  },
+  {
+    "id": "D0246",
+    "name": "Nina Hassan",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 115.2,
+      "hard_brakes_per_100km": 8.3,
+      "night_pct": 0.389,
+      "monthly_km": 1914,
+      "harsh_corners_per_100km": 6.0
+    }
+  },
+  {
+    "id": "D0247",
+    "name": "Aisha Murphy",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 110.6,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.388,
+      "monthly_km": 1295,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0248",
+    "name": "Sarah Silva",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 100.8,
+      "hard_brakes_per_100km": 6.9,
+      "night_pct": 0.317,
+      "monthly_km": 1841,
+      "harsh_corners_per_100km": 5.0
+    }
+  },
+  {
+    "id": "D0249",
+    "name": "Kai Walker",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 101.8,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.371,
+      "monthly_km": 1677,
+      "harsh_corners_per_100km": 4.1
+    }
+  },
+  {
+    "id": "D0250",
+    "name": "Priya Sato",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 110.6,
+      "hard_brakes_per_100km": 6.6,
+      "night_pct": 0.385,
+      "monthly_km": 2518,
+      "harsh_corners_per_100km": 4.0
+    }
+  },
+  {
+    "id": "D0251",
+    "name": "Sofia Garcia",
+    "age": 27,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 116.3,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.443,
+      "monthly_km": 1493,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0252",
+    "name": "Chloe Park",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 91.2,
+      "hard_brakes_per_100km": 10.8,
+      "night_pct": 0.547,
+      "monthly_km": 1761,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0253",
+    "name": "Marcus Kumar",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 99.2,
+      "hard_brakes_per_100km": 10.3,
+      "night_pct": 0.462,
+      "monthly_km": 2315,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0254",
+    "name": "Sarah Khan",
+    "age": 31,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.6,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.361,
+      "monthly_km": 1508,
+      "harsh_corners_per_100km": 5.5
+    }
+  },
+  {
+    "id": "D0255",
+    "name": "Sofia Costa",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 104.2,
+      "hard_brakes_per_100km": 6.8,
+      "night_pct": 0.239,
+      "monthly_km": 1840,
+      "harsh_corners_per_100km": 4.3
+    }
+  },
+  {
+    "id": "D0256",
+    "name": "Daniel Smith",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 105.9,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.404,
+      "monthly_km": 911,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0257",
+    "name": "Wei Smith",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 110.3,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.53,
+      "monthly_km": 1351,
+      "harsh_corners_per_100km": 5.6
+    }
+  },
+  {
+    "id": "D0258",
+    "name": "Felix Smith",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 101.2,
+      "hard_brakes_per_100km": 6.4,
+      "night_pct": 0.451,
+      "monthly_km": 2420,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0259",
+    "name": "Priya Chen",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 92.2,
+      "hard_brakes_per_100km": 8.6,
+      "night_pct": 0.35,
+      "monthly_km": 1913,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0260",
+    "name": "Ava Silva",
+    "age": 34,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 94.3,
+      "hard_brakes_per_100km": 6.4,
+      "night_pct": 0.454,
+      "monthly_km": 1961,
+      "harsh_corners_per_100km": 6.3
+    }
+  },
+  {
+    "id": "D0261",
+    "name": "Raj Lee",
+    "age": 31,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.0,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.402,
+      "monthly_km": 2606,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0262",
+    "name": "Liam Tan",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 101.2,
+      "hard_brakes_per_100km": 8.3,
+      "night_pct": 0.409,
+      "monthly_km": 2092,
+      "harsh_corners_per_100km": 4.6
+    }
+  },
+  {
+    "id": "D0263",
+    "name": "Noah Adams",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.7,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.304,
+      "monthly_km": 1964,
+      "harsh_corners_per_100km": 5.4
+    }
+  },
+  {
+    "id": "D0264",
+    "name": "Emma Diaz",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 91.5,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.345,
+      "monthly_km": 2217,
+      "harsh_corners_per_100km": 5.8
+    }
+  },
+  {
+    "id": "D0265",
+    "name": "Emma Clarke",
+    "age": 34,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 87.5,
+      "hard_brakes_per_100km": 8.0,
+      "night_pct": 0.363,
+      "monthly_km": 1494,
+      "harsh_corners_per_100km": 7.5
+    }
+  },
+  {
+    "id": "D0266",
+    "name": "Zara Park",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 102.4,
+      "hard_brakes_per_100km": 8.6,
+      "night_pct": 0.412,
+      "monthly_km": 1535,
+      "harsh_corners_per_100km": 6.1
+    }
+  },
+  {
+    "id": "D0267",
+    "name": "Tom Brown",
+    "age": 27,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.8,
+      "hard_brakes_per_100km": 8.0,
+      "night_pct": 0.361,
+      "monthly_km": 2123,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0268",
+    "name": "Mei Singh",
+    "age": 38,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 100.0,
+      "hard_brakes_per_100km": 8.2,
+      "night_pct": 0.428,
+      "monthly_km": 2246,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0269",
+    "name": "Mateo Murphy",
+    "age": 34,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 108.1,
+      "hard_brakes_per_100km": 9.9,
+      "night_pct": 0.305,
+      "monthly_km": 1805,
+      "harsh_corners_per_100km": 5.0
+    }
+  },
+  {
+    "id": "D0270",
+    "name": "Layla Smith",
+    "age": 29,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 97.9,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.365,
+      "monthly_km": 1804,
+      "harsh_corners_per_100km": 6.7
+    }
+  },
+  {
+    "id": "D0271",
+    "name": "James Chen",
+    "age": 38,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 100.8,
+      "hard_brakes_per_100km": 7.9,
+      "night_pct": 0.413,
+      "monthly_km": 1890,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0272",
+    "name": "Hiro Garcia",
+    "age": 34,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 90.3,
+      "hard_brakes_per_100km": 7.6,
+      "night_pct": 0.363,
+      "monthly_km": 1687,
+      "harsh_corners_per_100km": 6.3
+    }
+  },
+  {
+    "id": "D0273",
+    "name": "James Diaz",
+    "age": 31,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 101.9,
+      "hard_brakes_per_100km": 7.8,
+      "night_pct": 0.364,
+      "monthly_km": 1733,
+      "harsh_corners_per_100km": 6.1
+    }
+  },
+  {
+    "id": "D0274",
+    "name": "Wei Walker",
+    "age": 45,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 67.7,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.155,
+      "monthly_km": 1468,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0275",
+    "name": "Felix O'Brien",
+    "age": 45,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.4,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.131,
+      "monthly_km": 759,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0276",
+    "name": "Noah Park",
+    "age": 36,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 76.7,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.133,
+      "monthly_km": 912,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0277",
+    "name": "Daniel Garcia",
+    "age": 28,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 84.5,
+      "hard_brakes_per_100km": 4.8,
+      "night_pct": 0.181,
+      "monthly_km": 1103,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0278",
+    "name": "Liam Sato",
+    "age": 62,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 76.9,
+      "hard_brakes_per_100km": 5.3,
+      "night_pct": 0.169,
+      "monthly_km": 1895,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0279",
+    "name": "Sofia Ali",
+    "age": 43,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.5,
+      "hard_brakes_per_100km": 4.9,
+      "night_pct": 0.223,
+      "monthly_km": 992,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0280",
+    "name": "Mei Jones",
+    "age": 32,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 88.3,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.224,
+      "monthly_km": 1691,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0281",
+    "name": "Liam Wong",
+    "age": 59,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 81.3,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.099,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0282",
+    "name": "Raj Tan",
+    "age": 36,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 89.4,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.077,
+      "monthly_km": 722,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0283",
+    "name": "Isla Singh",
+    "age": 55,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 78.6,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.183,
+      "monthly_km": 622,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0284",
+    "name": "Zara Chen",
+    "age": 60,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 84.0,
+      "hard_brakes_per_100km": 2.8,
+      "night_pct": 0.229,
+      "monthly_km": 1251,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0285",
+    "name": "Isla Walker",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 98.9,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.156,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0286",
+    "name": "Ava Silva",
+    "age": 26,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 84.1,
+      "hard_brakes_per_100km": 5.3,
+      "night_pct": 0.171,
+      "monthly_km": 692,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0287",
+    "name": "Hiro Hassan",
+    "age": 39,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 102.4,
+      "hard_brakes_per_100km": 4.5,
+      "night_pct": 0.111,
+      "monthly_km": 1805,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0288",
+    "name": "Zara Nguyen",
+    "age": 37,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 72.7,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.152,
+      "monthly_km": 1044,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0289",
+    "name": "Hiro Silva",
+    "age": 42,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 87.2,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.265,
+      "monthly_km": 956,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0290",
+    "name": "Ruby Taylor",
+    "age": 32,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 84.1,
+      "hard_brakes_per_100km": 3.1,
+      "night_pct": 0.18,
+      "monthly_km": 840,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0291",
+    "name": "Mei Nguyen",
+    "age": 33,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 84.9,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.227,
+      "monthly_km": 1394,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0292",
+    "name": "Daniel Garcia",
+    "age": 47,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.5,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.203,
+      "monthly_km": 1094,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0293",
+    "name": "Emma Ali",
+    "age": 53,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 81.2,
+      "hard_brakes_per_100km": 6.4,
+      "night_pct": 0.182,
+      "monthly_km": 1139,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0294",
+    "name": "Felix Silva",
+    "age": 59,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 61.0,
+      "hard_brakes_per_100km": 6.2,
+      "night_pct": 0.217,
+      "monthly_km": 835,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0295",
+    "name": "Omar Wong",
+    "age": 64,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.3,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.04,
+      "monthly_km": 1208,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0296",
+    "name": "James Kumar",
+    "age": 32,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 88.8,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.356,
+      "monthly_km": 1204,
+      "harsh_corners_per_100km": 2.9
+    }
+  },
+  {
+    "id": "D0297",
+    "name": "Omar Kumar",
+    "age": 34,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 96.6,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.158,
+      "monthly_km": 1107,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0298",
+    "name": "Chloe Patel",
+    "age": 28,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.5,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.152,
+      "monthly_km": 1266,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0299",
+    "name": "Noah Murphy",
+    "age": 51,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 85.9,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.171,
+      "monthly_km": 984,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0300",
+    "name": "Priya Smith",
+    "age": 32,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.0,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.229,
+      "monthly_km": 1382,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0301",
+    "name": "Isla Ali",
+    "age": 64,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 78.3,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.185,
+      "monthly_km": 679,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0302",
+    "name": "Ethan Taylor",
+    "age": 46,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.5,
+      "hard_brakes_per_100km": 4.2,
+      "night_pct": 0.211,
+      "monthly_km": 1084,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0303",
+    "name": "Felix Tan",
+    "age": 62,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 93.3,
+      "hard_brakes_per_100km": 3.8,
+      "night_pct": 0.281,
+      "monthly_km": 1205,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0304",
+    "name": "Sarah Hassan",
+    "age": 27,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 93.7,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.206,
+      "monthly_km": 1660,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0305",
+    "name": "Sofia Walker",
+    "age": 24,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 91.2,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.28,
+      "monthly_km": 1862,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0306",
+    "name": "Mei Garcia",
+    "age": 28,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 90.3,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.11,
+      "monthly_km": 1597,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0307",
+    "name": "Priya Chen",
+    "age": 56,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 60,
+      "hard_brakes_per_100km": 3.8,
+      "night_pct": 0.2,
+      "monthly_km": 1774,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0308",
+    "name": "Grace Murphy",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 83.1,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.098,
+      "monthly_km": 1488,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0309",
+    "name": "Isla Kumar",
+    "age": 64,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 80.7,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.302,
+      "monthly_km": 861,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0310",
+    "name": "Grace Lee",
+    "age": 62,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.6,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.208,
+      "monthly_km": 1253,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0311",
+    "name": "Arjun Adams",
+    "age": 24,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 86.4,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.144,
+      "monthly_km": 1390,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0312",
+    "name": "Hiro Murphy",
+    "age": 31,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 63.5,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.176,
+      "monthly_km": 1537,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0313",
+    "name": "Felix Lee",
+    "age": 28,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 61.7,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.205,
+      "monthly_km": 1092,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0314",
+    "name": "Isla Sato",
+    "age": 31,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 100.6,
+      "hard_brakes_per_100km": 4.8,
+      "night_pct": 0.2,
+      "monthly_km": 1377,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0315",
+    "name": "Isla Chen",
+    "age": 48,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 61.0,
+      "hard_brakes_per_100km": 6.7,
+      "night_pct": 0.218,
+      "monthly_km": 1214,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0316",
+    "name": "Kai Hassan",
+    "age": 44,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 99.6,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.157,
+      "monthly_km": 702,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0317",
+    "name": "Zara Sato",
+    "age": 57,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 89.5,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.251,
+      "monthly_km": 1435,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0318",
+    "name": "Priya Evans",
+    "age": 36,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 74.1,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.215,
+      "monthly_km": 942,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0319",
+    "name": "Felix Patel",
+    "age": 36,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 81.6,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.128,
+      "monthly_km": 567,
+      "harsh_corners_per_100km": 4.4
+    }
+  },
+  {
+    "id": "D0320",
+    "name": "Sarah Kumar",
+    "age": 24,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 75.8,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.104,
+      "monthly_km": 1750,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0321",
+    "name": "Tom Patel",
+    "age": 27,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 64.9,
+      "hard_brakes_per_100km": 5.3,
+      "night_pct": 0.232,
+      "monthly_km": 1230,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0322",
+    "name": "Olivia Nair",
+    "age": 29,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 89.0,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.221,
+      "monthly_km": 902,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0323",
+    "name": "Mei Singh",
+    "age": 32,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.2,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.155,
+      "monthly_km": 859,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0324",
+    "name": "Olivia Hassan",
+    "age": 28,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 74.9,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.145,
+      "monthly_km": 656,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0325",
+    "name": "Layla Costa",
+    "age": 50,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 89.2,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.159,
+      "monthly_km": 1401,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0326",
+    "name": "Hiro Costa",
+    "age": 62,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 84.3,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.177,
+      "monthly_km": 1376,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0327",
+    "name": "Nina Hassan",
+    "age": 56,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 94.7,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.207,
+      "monthly_km": 1204,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0328",
+    "name": "Raj Rossi",
+    "age": 30,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 84.6,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.311,
+      "monthly_km": 996,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0329",
+    "name": "Felix Park",
+    "age": 32,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.6,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.188,
+      "monthly_km": 1682,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0330",
+    "name": "Hiro Taylor",
+    "age": 28,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 72.2,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.133,
+      "monthly_km": 1066,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0331",
+    "name": "Ava Park",
+    "age": 26,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 80.1,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.29,
+      "monthly_km": 1350,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0332",
+    "name": "Liam Kumar",
+    "age": 37,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.4,
+      "hard_brakes_per_100km": 2.6,
+      "night_pct": 0.166,
+      "monthly_km": 1252,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0333",
+    "name": "Olivia Brown",
+    "age": 42,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.4,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.168,
+      "monthly_km": 1007,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0334",
+    "name": "Ruby Silva",
+    "age": 39,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.8,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.126,
+      "monthly_km": 1445,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0335",
+    "name": "Felix Nguyen",
+    "age": 56,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.0,
+      "hard_brakes_per_100km": 2.6,
+      "night_pct": 0.248,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0336",
+    "name": "Olivia O'Brien",
+    "age": 54,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 95.3,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.306,
+      "monthly_km": 1317,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0337",
+    "name": "Noah O'Brien",
+    "age": 27,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.8,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.24,
+      "monthly_km": 1133,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0338",
+    "name": "Omar Park",
+    "age": 46,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 64.1,
+      "hard_brakes_per_100km": 6.1,
+      "night_pct": 0.223,
+      "monthly_km": 1189,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0339",
+    "name": "Grace Sato",
+    "age": 55,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.7,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.151,
+      "monthly_km": 992,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0340",
+    "name": "Wei Reid",
+    "age": 36,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 88.1,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.197,
+      "monthly_km": 1620,
+      "harsh_corners_per_100km": 4.6
+    }
+  },
+  {
+    "id": "D0341",
+    "name": "Grace O'Brien",
+    "age": 61,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 82.1,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.114,
+      "monthly_km": 1167,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0342",
+    "name": "Omar Murphy",
+    "age": 43,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 98.3,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.063,
+      "monthly_km": 1796,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0343",
+    "name": "Liam Adams",
+    "age": 35,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 84.8,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.141,
+      "monthly_km": 1691,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0344",
+    "name": "Arjun Ali",
+    "age": 60,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 85.8,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.174,
+      "monthly_km": 909,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0345",
+    "name": "Marcus O'Brien",
+    "age": 60,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 82.5,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.085,
+      "monthly_km": 1442,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0346",
+    "name": "Mei Jones",
+    "age": 64,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 81.8,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.222,
+      "monthly_km": 1177,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0347",
+    "name": "Sarah Rossi",
+    "age": 24,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.2,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.284,
+      "monthly_km": 837,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0348",
+    "name": "Ava Adams",
+    "age": 54,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 76.7,
+      "hard_brakes_per_100km": 4.2,
+      "night_pct": 0.056,
+      "monthly_km": 1572,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0349",
+    "name": "Ava Nair",
+    "age": 30,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 89.8,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.163,
+      "monthly_km": 1470,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0350",
+    "name": "Liam Evans",
+    "age": 63,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 70.5,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.04,
+      "monthly_km": 982,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0351",
+    "name": "Sarah Lee",
+    "age": 30,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.4,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.165,
+      "monthly_km": 1357,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0352",
+    "name": "Aisha Lee",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 76.8,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.173,
+      "monthly_km": 927,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0353",
+    "name": "Mateo Diaz",
+    "age": 64,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.2,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.181,
+      "monthly_km": 1350,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0354",
+    "name": "James Chen",
+    "age": 54,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 85.8,
+      "hard_brakes_per_100km": 5.9,
+      "night_pct": 0.258,
+      "monthly_km": 1143,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0355",
+    "name": "Olivia Nair",
+    "age": 35,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 93.6,
+      "hard_brakes_per_100km": 2.9,
+      "night_pct": 0.126,
+      "monthly_km": 964,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0356",
+    "name": "Olivia Brown",
+    "age": 29,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 75.0,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.177,
+      "monthly_km": 1324,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0357",
+    "name": "Daniel Costa",
+    "age": 50,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 67.2,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.132,
+      "monthly_km": 1549,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0358",
+    "name": "Ruby Smith",
+    "age": 60,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 78.0,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.271,
+      "monthly_km": 882,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0359",
+    "name": "Layla Brown",
+    "age": 32,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 81.7,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.359,
+      "monthly_km": 1827,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0360",
+    "name": "Priya Taylor",
+    "age": 28,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 60,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.088,
+      "monthly_km": 724,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0361",
+    "name": "Mateo Garcia",
+    "age": 24,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 104.0,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.136,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0362",
+    "name": "Daniel Tan",
+    "age": 30,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 89.9,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.189,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0363",
+    "name": "Ruby Sato",
+    "age": 54,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 76.2,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.142,
+      "monthly_km": 943,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0364",
+    "name": "Olivia Garcia",
+    "age": 39,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 90.5,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.173,
+      "monthly_km": 1108,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0365",
+    "name": "Wei Kumar",
+    "age": 43,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.3,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.247,
+      "monthly_km": 874,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0366",
+    "name": "Omar Nguyen",
+    "age": 44,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 71.3,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.188,
+      "monthly_km": 1493,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0367",
+    "name": "Daniel Clarke",
+    "age": 55,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 64.8,
+      "hard_brakes_per_100km": 3.2,
+      "night_pct": 0.144,
+      "monthly_km": 1357,
+      "harsh_corners_per_100km": 4.2
+    }
+  },
+  {
+    "id": "D0368",
+    "name": "Isla Park",
+    "age": 25,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 86.7,
+      "hard_brakes_per_100km": 4.9,
+      "night_pct": 0.142,
+      "monthly_km": 1192,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0369",
+    "name": "Ruby Diaz",
+    "age": 47,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 65.5,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.203,
+      "monthly_km": 1310,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0370",
+    "name": "Hiro Diaz",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 72.2,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.274,
+      "monthly_km": 954,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0371",
+    "name": "Zara Silva",
+    "age": 29,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 93.6,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.214,
+      "monthly_km": 1659,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0372",
+    "name": "Sofia Reid",
+    "age": 41,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 88.8,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.315,
+      "monthly_km": 1049,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0373",
+    "name": "Sarah Hassan",
+    "age": 35,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.0,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.063,
+      "monthly_km": 1970,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0374",
+    "name": "Olivia Clarke",
+    "age": 46,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 84.9,
+      "hard_brakes_per_100km": 2.6,
+      "night_pct": 0.278,
+      "monthly_km": 1097,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0375",
+    "name": "Aisha Brown",
+    "age": 24,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 86.5,
+      "hard_brakes_per_100km": 3.2,
+      "night_pct": 0.26,
+      "monthly_km": 869,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0376",
+    "name": "Chloe Clarke",
+    "age": 41,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 75.5,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.2,
+      "monthly_km": 1280,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0377",
+    "name": "Grace Evans",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 81.0,
+      "hard_brakes_per_100km": 3.2,
+      "night_pct": 0.143,
+      "monthly_km": 942,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0378",
+    "name": "Emma Taylor",
+    "age": 26,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 83.4,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.121,
+      "monthly_km": 1205,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0379",
+    "name": "Tom Nguyen",
+    "age": 46,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 76.4,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.265,
+      "monthly_km": 1366,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0380",
+    "name": "Nina Taylor",
+    "age": 35,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 86.5,
+      "hard_brakes_per_100km": 3.1,
+      "night_pct": 0.21,
+      "monthly_km": 1305,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0381",
+    "name": "Priya Smith",
+    "age": 45,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 100.2,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.271,
+      "monthly_km": 984,
+      "harsh_corners_per_100km": 4.0
+    }
+  },
+  {
+    "id": "D0382",
+    "name": "Zara Patel",
+    "age": 54,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 77.1,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.274,
+      "monthly_km": 1364,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0383",
+    "name": "James Hassan",
+    "age": 33,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 75.3,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.102,
+      "monthly_km": 595,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0384",
+    "name": "Emma Lee",
+    "age": 29,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 103.1,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.219,
+      "monthly_km": 1184,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0385",
+    "name": "Chloe O'Brien",
+    "age": 34,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.2,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.202,
+      "monthly_km": 971,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0386",
+    "name": "Felix Costa",
+    "age": 24,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 83.0,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.112,
+      "monthly_km": 1350,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0387",
+    "name": "Aisha Adams",
+    "age": 36,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 86.9,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.188,
+      "monthly_km": 910,
+      "harsh_corners_per_100km": 4.1
+    }
+  },
+  {
+    "id": "D0388",
+    "name": "Sarah Singh",
+    "age": 43,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 81.3,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.223,
+      "monthly_km": 989,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0389",
+    "name": "Nina Reid",
+    "age": 45,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 89.1,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.235,
+      "monthly_km": 1135,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0390",
+    "name": "Mei Jones",
+    "age": 25,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 93.6,
+      "hard_brakes_per_100km": 3.8,
+      "night_pct": 0.18,
+      "monthly_km": 990,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0391",
+    "name": "Tom Tan",
+    "age": 26,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 71.9,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.194,
+      "monthly_km": 1021,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0392",
+    "name": "Olivia Costa",
+    "age": 31,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 78.9,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.283,
+      "monthly_km": 1183,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0393",
+    "name": "Sofia Walker",
+    "age": 64,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 80.4,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.157,
+      "monthly_km": 1508,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0394",
+    "name": "Daniel Taylor",
+    "age": 56,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 91.8,
+      "hard_brakes_per_100km": 4.9,
+      "night_pct": 0.102,
+      "monthly_km": 821,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0395",
+    "name": "James Park",
+    "age": 57,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 92.4,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.209,
+      "monthly_km": 1285,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0396",
+    "name": "Grace Lee",
+    "age": 24,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 81.2,
+      "hard_brakes_per_100km": 4.2,
+      "night_pct": 0.132,
+      "monthly_km": 1205,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0397",
+    "name": "Priya Kumar",
+    "age": 56,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 78.3,
+      "hard_brakes_per_100km": 5.3,
+      "night_pct": 0.238,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0398",
+    "name": "Tom Walker",
+    "age": 35,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 93.9,
+      "hard_brakes_per_100km": 2.6,
+      "night_pct": 0.04,
+      "monthly_km": 1458,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0399",
+    "name": "Hiro Park",
+    "age": 26,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 85.2,
+      "hard_brakes_per_100km": 3.1,
+      "night_pct": 0.114,
+      "monthly_km": 1710,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0400",
+    "name": "Arjun Singh",
+    "age": 45,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 86.5,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.09,
+      "monthly_km": 1386,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0401",
+    "name": "Sofia Garcia",
+    "age": 50,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 78.9,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.167,
+      "monthly_km": 686,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0402",
+    "name": "Mei Nguyen",
+    "age": 60,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 77.8,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.198,
+      "monthly_km": 1064,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0403",
+    "name": "Ethan Garcia",
+    "age": 32,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.9,
+      "hard_brakes_per_100km": 4.2,
+      "night_pct": 0.085,
+      "monthly_km": 1668,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0404",
+    "name": "James Evans",
+    "age": 60,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.4,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.176,
+      "monthly_km": 1503,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0405",
+    "name": "Omar Jones",
+    "age": 39,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 67.6,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.167,
+      "monthly_km": 925,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0406",
+    "name": "Arjun Taylor",
+    "age": 34,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 78.4,
+      "hard_brakes_per_100km": 3.1,
+      "night_pct": 0.248,
+      "monthly_km": 545,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0407",
+    "name": "Omar O'Brien",
+    "age": 27,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 81.0,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.217,
+      "monthly_km": 1253,
+      "harsh_corners_per_100km": 5.0
+    }
+  },
+  {
+    "id": "D0408",
+    "name": "Chloe Garcia",
+    "age": 52,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 76.0,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.058,
+      "monthly_km": 1360,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0409",
+    "name": "Wei Adams",
+    "age": 24,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 88.3,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.153,
+      "monthly_km": 819,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0410",
+    "name": "Ethan Singh",
+    "age": 27,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 78.0,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.208,
+      "monthly_km": 1703,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0411",
+    "name": "Emma Silva",
+    "age": 52,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 79.1,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.086,
+      "monthly_km": 1131,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0412",
+    "name": "Layla Taylor",
+    "age": 30,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 83.6,
+      "hard_brakes_per_100km": 5.1,
+      "night_pct": 0.267,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0413",
+    "name": "Wei Tan",
+    "age": 36,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 93.7,
+      "hard_brakes_per_100km": 4.9,
+      "night_pct": 0.076,
+      "monthly_km": 974,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0414",
+    "name": "Kai Hassan",
+    "age": 64,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 73.4,
+      "hard_brakes_per_100km": 4.8,
+      "night_pct": 0.202,
+      "monthly_km": 655,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0415",
+    "name": "Ava Taylor",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 88.5,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.136,
+      "monthly_km": 1232,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0416",
+    "name": "Wei Kumar",
+    "age": 48,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 60,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.221,
+      "monthly_km": 1613,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0417",
+    "name": "Ruby Garcia",
+    "age": 49,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.8,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.227,
+      "monthly_km": 1107,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0418",
+    "name": "Ava Park",
+    "age": 44,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 88.9,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.144,
+      "monthly_km": 647,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0419",
+    "name": "Aisha Clarke",
+    "age": 35,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 96.8,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.076,
+      "monthly_km": 1364,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0420",
+    "name": "James Costa",
+    "age": 58,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.1,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.086,
+      "monthly_km": 977,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0421",
+    "name": "Felix Chen",
+    "age": 36,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.2,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.178,
+      "monthly_km": 1519,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0422",
+    "name": "Raj Taylor",
+    "age": 52,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 81.9,
+      "hard_brakes_per_100km": 6.7,
+      "night_pct": 0.159,
+      "monthly_km": 927,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0423",
+    "name": "Omar Taylor",
+    "age": 39,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.4,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.04,
+      "monthly_km": 1179,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0424",
+    "name": "Arjun Reid",
+    "age": 24,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.9,
+      "hard_brakes_per_100km": 3.1,
+      "night_pct": 0.364,
+      "monthly_km": 943,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0425",
+    "name": "Ethan Hassan",
+    "age": 47,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 93.7,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.041,
+      "monthly_km": 1571,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0426",
+    "name": "Aisha Patel",
+    "age": 26,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 60,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.34,
+      "monthly_km": 1604,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0427",
+    "name": "Mateo Rossi",
+    "age": 33,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 77.0,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.248,
+      "monthly_km": 1190,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0428",
+    "name": "Kai Jones",
+    "age": 59,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.9,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.085,
+      "monthly_km": 723,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0429",
+    "name": "Felix Nguyen",
+    "age": 56,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 98.8,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.225,
+      "monthly_km": 1253,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0430",
+    "name": "Mateo Silva",
+    "age": 63,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 74.4,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.257,
+      "monthly_km": 855,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0431",
+    "name": "Nina Costa",
+    "age": 63,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.3,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.179,
+      "monthly_km": 1015,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0432",
+    "name": "Arjun Evans",
+    "age": 57,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 72.4,
+      "hard_brakes_per_100km": 6.8,
+      "night_pct": 0.245,
+      "monthly_km": 1083,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0433",
+    "name": "Felix Murphy",
+    "age": 56,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 80.0,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.187,
+      "monthly_km": 1384,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0434",
+    "name": "Liam Costa",
+    "age": 51,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 80.8,
+      "hard_brakes_per_100km": 3.8,
+      "night_pct": 0.276,
+      "monthly_km": 1408,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0435",
+    "name": "Mateo Diaz",
+    "age": 28,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 62.2,
+      "hard_brakes_per_100km": 2.6,
+      "night_pct": 0.04,
+      "monthly_km": 1280,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0436",
+    "name": "Ava Nguyen",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.9,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.297,
+      "monthly_km": 1408,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0437",
+    "name": "Sofia Brown",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 77.3,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.126,
+      "monthly_km": 1721,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0438",
+    "name": "Tom Clarke",
+    "age": 42,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 97.3,
+      "hard_brakes_per_100km": 4.8,
+      "night_pct": 0.31,
+      "monthly_km": 1392,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0439",
+    "name": "Priya Patel",
+    "age": 54,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 91.2,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.105,
+      "monthly_km": 793,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0440",
+    "name": "Noah Tan",
+    "age": 47,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 81.6,
+      "hard_brakes_per_100km": 1.1,
+      "night_pct": 0.214,
+      "monthly_km": 963,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0441",
+    "name": "Omar Silva",
+    "age": 59,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.7,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.196,
+      "monthly_km": 886,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0442",
+    "name": "Aisha Adams",
+    "age": 35,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 81.1,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.216,
+      "monthly_km": 1939,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0443",
+    "name": "Nina Rossi",
+    "age": 59,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 77.5,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.222,
+      "monthly_km": 1410,
+      "harsh_corners_per_100km": 0.5
+    }
+  },
+  {
+    "id": "D0444",
+    "name": "Mateo Nair",
+    "age": 32,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 81.1,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.272,
+      "monthly_km": 1526,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0445",
+    "name": "Raj Clarke",
+    "age": 43,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 82.7,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.199,
+      "monthly_km": 889,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0446",
+    "name": "Zara Sato",
+    "age": 51,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 91.0,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.21,
+      "monthly_km": 1465,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0447",
+    "name": "Mei Taylor",
+    "age": 43,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 66.6,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.04,
+      "monthly_km": 879,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0448",
+    "name": "James O'Brien",
+    "age": 64,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.5,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.155,
+      "monthly_km": 1843,
+      "harsh_corners_per_100km": 2.9
+    }
+  },
+  {
+    "id": "D0449",
+    "name": "Priya Evans",
+    "age": 49,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 77.8,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.19,
+      "monthly_km": 1653,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0450",
+    "name": "Mateo Rossi",
+    "age": 61,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.061,
+      "monthly_km": 1305,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0451",
+    "name": "Ava Murphy",
+    "age": 63,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 87.3,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.175,
+      "monthly_km": 684,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0452",
+    "name": "Mei Brown",
+    "age": 46,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.0,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.05,
+      "monthly_km": 915,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0453",
+    "name": "Layla Wong",
+    "age": 57,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 94.9,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.234,
+      "monthly_km": 1252,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0454",
+    "name": "Wei Kumar",
+    "age": 41,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.0,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.241,
+      "monthly_km": 1162,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0455",
+    "name": "Mateo Ali",
+    "age": 28,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 70.4,
+      "hard_brakes_per_100km": 4.8,
+      "night_pct": 0.27,
+      "monthly_km": 862,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0456",
+    "name": "Kai Smith",
+    "age": 56,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 72.7,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.235,
+      "monthly_km": 901,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0457",
+    "name": "Liam Smith",
+    "age": 47,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 83.5,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.227,
+      "monthly_km": 1254,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0458",
+    "name": "Noah Lee",
+    "age": 50,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 88.0,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.101,
+      "monthly_km": 1246,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0459",
+    "name": "Marcus Tan",
+    "age": 60,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 87.8,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.162,
+      "monthly_km": 1132,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0460",
+    "name": "Liam Rossi",
+    "age": 42,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 92.7,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.04,
+      "monthly_km": 1717,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0461",
+    "name": "Ava Clarke",
+    "age": 62,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 66.4,
+      "hard_brakes_per_100km": 6.8,
+      "night_pct": 0.174,
+      "monthly_km": 1516,
+      "harsh_corners_per_100km": 4.1
+    }
+  },
+  {
+    "id": "D0462",
+    "name": "Nina Costa",
+    "age": 61,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 88.1,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.17,
+      "monthly_km": 1759,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0463",
+    "name": "Sofia Garcia",
+    "age": 50,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 91.2,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.189,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0464",
+    "name": "James O'Brien",
+    "age": 54,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 68.3,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.299,
+      "monthly_km": 1349,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0465",
+    "name": "Mateo Diaz",
+    "age": 50,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 81.9,
+      "hard_brakes_per_100km": 7.3,
+      "night_pct": 0.181,
+      "monthly_km": 1039,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0466",
+    "name": "Grace Murphy",
+    "age": 60,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 60.7,
+      "hard_brakes_per_100km": 5.3,
+      "night_pct": 0.061,
+      "monthly_km": 1267,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0467",
+    "name": "Mei Rossi",
+    "age": 58,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 96.6,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.187,
+      "monthly_km": 1381,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0468",
+    "name": "Aisha Chen",
+    "age": 44,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.5,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.149,
+      "monthly_km": 1118,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0469",
+    "name": "James Tan",
+    "age": 60,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 82.7,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.222,
+      "monthly_km": 1169,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0470",
+    "name": "Olivia Taylor",
+    "age": 54,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.6,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.095,
+      "monthly_km": 1056,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0471",
+    "name": "Zara Sato",
+    "age": 31,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 93.5,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.11,
+      "monthly_km": 1652,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0472",
+    "name": "Felix Nguyen",
+    "age": 27,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 86.4,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.057,
+      "monthly_km": 1168,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0473",
+    "name": "Chloe Chen",
+    "age": 29,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 68.9,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.057,
+      "monthly_km": 734,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0474",
+    "name": "Noah Sato",
+    "age": 62,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 84.4,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.04,
+      "monthly_km": 1871,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0475",
+    "name": "Chloe Wong",
+    "age": 42,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 74.0,
+      "hard_brakes_per_100km": 2.9,
+      "night_pct": 0.198,
+      "monthly_km": 851,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0476",
+    "name": "Felix Clarke",
+    "age": 34,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.5,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.101,
+      "monthly_km": 853,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0477",
+    "name": "Layla Garcia",
+    "age": 28,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 93.3,
+      "hard_brakes_per_100km": 2.9,
+      "night_pct": 0.236,
+      "monthly_km": 838,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0478",
+    "name": "Raj Adams",
+    "age": 36,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 92.7,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.076,
+      "monthly_km": 1934,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0479",
+    "name": "Zara Chen",
+    "age": 42,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 95.5,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.251,
+      "monthly_km": 1306,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0480",
+    "name": "Felix Murphy",
+    "age": 60,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 101.7,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.215,
+      "monthly_km": 778,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0481",
+    "name": "Layla Jones",
+    "age": 25,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 60,
+      "hard_brakes_per_100km": 5.4,
+      "night_pct": 0.161,
+      "monthly_km": 749,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0482",
+    "name": "Olivia Nair",
+    "age": 46,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 68.9,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.2,
+      "monthly_km": 1735,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0483",
+    "name": "Nina Rossi",
+    "age": 28,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 72.2,
+      "hard_brakes_per_100km": 3.8,
+      "night_pct": 0.211,
+      "monthly_km": 900,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0484",
+    "name": "Emma Sato",
+    "age": 36,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 84.6,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.228,
+      "monthly_km": 1729,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0485",
+    "name": "Noah Hassan",
+    "age": 46,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 79.2,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.23,
+      "monthly_km": 1539,
+      "harsh_corners_per_100km": 0.8
+    }
+  },
+  {
+    "id": "D0486",
+    "name": "James Kumar",
+    "age": 54,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 104.0,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.172,
+      "monthly_km": 1202,
+      "harsh_corners_per_100km": 4.0
+    }
+  },
+  {
+    "id": "D0487",
+    "name": "Emma Wong",
+    "age": 35,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.3,
+      "hard_brakes_per_100km": 6.3,
+      "night_pct": 0.094,
+      "monthly_km": 950,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0488",
+    "name": "Noah Costa",
+    "age": 49,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.0,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.204,
+      "monthly_km": 820,
+      "harsh_corners_per_100km": 1.3
+    }
+  },
+  {
+    "id": "D0489",
+    "name": "James Nguyen",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.0,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.173,
+      "monthly_km": 1723,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0490",
+    "name": "Hiro Clarke",
+    "age": 35,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 86.2,
+      "hard_brakes_per_100km": 3.1,
+      "night_pct": 0.176,
+      "monthly_km": 1476,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0491",
+    "name": "Aisha Lee",
+    "age": 35,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.6,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.116,
+      "monthly_km": 1373,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0492",
+    "name": "Arjun Smith",
+    "age": 33,
+    "postcode": "7250",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 88.3,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.21,
+      "monthly_km": 780,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0493",
+    "name": "Liam Lee",
+    "age": 44,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.8,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.181,
+      "monthly_km": 1447,
+      "harsh_corners_per_100km": 1.4
+    }
+  },
+  {
+    "id": "D0494",
+    "name": "Olivia Silva",
+    "age": 64,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 84.0,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.214,
+      "monthly_km": 1322,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0495",
+    "name": "Tom Jones",
+    "age": 46,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 89.5,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.246,
+      "monthly_km": 603,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0496",
+    "name": "James Sato",
+    "age": 42,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 99.3,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.209,
+      "monthly_km": 1635,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0497",
+    "name": "Arjun Murphy",
+    "age": 42,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 77.0,
+      "hard_brakes_per_100km": 1.4,
+      "night_pct": 0.189,
+      "monthly_km": 1464,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0498",
+    "name": "Mei Hassan",
+    "age": 28,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 91.0,
+      "hard_brakes_per_100km": 6.2,
+      "night_pct": 0.128,
+      "monthly_km": 1622,
+      "harsh_corners_per_100km": 0.6
+    }
+  },
+  {
+    "id": "D0499",
+    "name": "Emma Smith",
+    "age": 49,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 73.5,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.274,
+      "monthly_km": 1083,
+      "harsh_corners_per_100km": 1.1
+    }
+  },
+  {
+    "id": "D0500",
+    "name": "Layla Hassan",
+    "age": 32,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 97.4,
+      "hard_brakes_per_100km": 2.9,
+      "night_pct": 0.104,
+      "monthly_km": 1150,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0501",
+    "name": "Olivia Adams",
+    "age": 28,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.0,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.153,
+      "monthly_km": 1281,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0502",
+    "name": "Marcus Chen",
+    "age": 48,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 83.6,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.213,
+      "monthly_km": 1196,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0503",
+    "name": "Noah Adams",
+    "age": 25,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.2,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.276,
+      "monthly_km": 1654,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0504",
+    "name": "Hiro Hassan",
+    "age": 32,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.2,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.041,
+      "monthly_km": 1345,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0505",
+    "name": "Ethan Brown",
+    "age": 64,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.0,
+      "hard_brakes_per_100km": 2.4,
+      "night_pct": 0.107,
+      "monthly_km": 808,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0506",
+    "name": "Wei Silva",
+    "age": 57,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 82.6,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.154,
+      "monthly_km": 1537,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0507",
+    "name": "Raj Wong",
+    "age": 43,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 83.2,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.157,
+      "monthly_km": 613,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0508",
+    "name": "Felix Patel",
+    "age": 39,
+    "postcode": "1000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 67.4,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.137,
+      "monthly_km": 1133,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0509",
+    "name": "Tom Singh",
+    "age": 39,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 74.8,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.224,
+      "monthly_km": 1170,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0510",
+    "name": "Chloe Adams",
+    "age": 53,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 74.2,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.19,
+      "monthly_km": 1322,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0511",
+    "name": "Grace Clarke",
+    "age": 25,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 85.7,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.183,
+      "monthly_km": 1734,
+      "harsh_corners_per_100km": 4.6
+    }
+  },
+  {
+    "id": "D0512",
+    "name": "Raj Rossi",
+    "age": 50,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 89.6,
+      "hard_brakes_per_100km": 4.9,
+      "night_pct": 0.21,
+      "monthly_km": 1208,
+      "harsh_corners_per_100km": 3.1
+    }
+  },
+  {
+    "id": "D0513",
+    "name": "Hiro Brown",
+    "age": 33,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 82.6,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.163,
+      "monthly_km": 1711,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0514",
+    "name": "Layla Garcia",
+    "age": 31,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 92.2,
+      "hard_brakes_per_100km": 4.5,
+      "night_pct": 0.228,
+      "monthly_km": 1828,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0515",
+    "name": "Layla Brown",
+    "age": 30,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 64.9,
+      "hard_brakes_per_100km": 3.9,
+      "night_pct": 0.4,
+      "monthly_km": 1379,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0516",
+    "name": "Sofia Taylor",
+    "age": 31,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 104.8,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.241,
+      "monthly_km": 1674,
+      "harsh_corners_per_100km": 2.4
+    }
+  },
+  {
+    "id": "D0517",
+    "name": "Chloe Patel",
+    "age": 31,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 69.4,
+      "hard_brakes_per_100km": 4.8,
+      "night_pct": 0.319,
+      "monthly_km": 1361,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0518",
+    "name": "Daniel Jones",
+    "age": 61,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.7,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.119,
+      "monthly_km": 1022,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0519",
+    "name": "Ethan Tan",
+    "age": 63,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 108.3,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.202,
+      "monthly_km": 1284,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0520",
+    "name": "Marcus Reid",
+    "age": 59,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 78.4,
+      "hard_brakes_per_100km": 4.5,
+      "night_pct": 0.147,
+      "monthly_km": 1162,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0521",
+    "name": "Tom Khan",
+    "age": 26,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 82.7,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.189,
+      "monthly_km": 1157,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0522",
+    "name": "Ava Silva",
+    "age": 41,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 77.7,
+      "hard_brakes_per_100km": 6.0,
+      "night_pct": 0.197,
+      "monthly_km": 1409,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0523",
+    "name": "Isla Tan",
+    "age": 64,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 95.3,
+      "hard_brakes_per_100km": 1.2,
+      "night_pct": 0.22,
+      "monthly_km": 828,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0524",
+    "name": "Liam Evans",
+    "age": 58,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 101.6,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.188,
+      "monthly_km": 945,
+      "harsh_corners_per_100km": 2.1
+    }
+  },
+  {
+    "id": "D0525",
+    "name": "Isla Taylor",
+    "age": 44,
+    "postcode": "2010",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.6,
+      "hard_brakes_per_100km": 1.9,
+      "night_pct": 0.181,
+      "monthly_km": 966,
+      "harsh_corners_per_100km": 1.8
+    }
+  },
+  {
+    "id": "D0526",
+    "name": "Isla Taylor",
+    "age": 30,
+    "postcode": "2000",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 99.3,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.278,
+      "monthly_km": 1718,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0527",
+    "name": "Chloe Diaz",
+    "age": 27,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 93.0,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.232,
+      "monthly_km": 867,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0528",
+    "name": "Ethan Nguyen",
+    "age": 64,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 102.8,
+      "hard_brakes_per_100km": 5.3,
+      "night_pct": 0.201,
+      "monthly_km": 1593,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0529",
+    "name": "Mateo Adams",
+    "age": 63,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.4,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.153,
+      "monthly_km": 826,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0530",
+    "name": "Marcus Adams",
+    "age": 58,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.7,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.347,
+      "monthly_km": 896,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0531",
+    "name": "Aisha Murphy",
+    "age": 59,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 91.2,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.104,
+      "monthly_km": 1623,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0532",
+    "name": "James Costa",
+    "age": 35,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 75.9,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.08,
+      "monthly_km": 1333,
+      "harsh_corners_per_100km": 2.8
+    }
+  },
+  {
+    "id": "D0533",
+    "name": "Emma Taylor",
+    "age": 44,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.9,
+      "hard_brakes_per_100km": 6.7,
+      "night_pct": 0.391,
+      "monthly_km": 894,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0534",
+    "name": "Daniel Costa",
+    "age": 59,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 69.5,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.157,
+      "monthly_km": 1433,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0535",
+    "name": "Ava Brown",
+    "age": 25,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.3,
+      "hard_brakes_per_100km": 3.8,
+      "night_pct": 0.18,
+      "monthly_km": 1480,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0536",
+    "name": "Sarah Patel",
+    "age": 59,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 88.9,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.132,
+      "monthly_km": 1752,
+      "harsh_corners_per_100km": 4.1
+    }
+  },
+  {
+    "id": "D0537",
+    "name": "Marcus Brown",
+    "age": 38,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.5,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.21,
+      "monthly_km": 890,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0538",
+    "name": "Priya Ali",
+    "age": 60,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 63.9,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.169,
+      "monthly_km": 641,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0539",
+    "name": "Chloe Patel",
+    "age": 45,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.1,
+      "hard_brakes_per_100km": 6.5,
+      "night_pct": 0.21,
+      "monthly_km": 752,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0540",
+    "name": "Daniel Kumar",
+    "age": 64,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 95.6,
+      "hard_brakes_per_100km": 1.6,
+      "night_pct": 0.195,
+      "monthly_km": 1704,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0541",
+    "name": "Raj Murphy",
+    "age": 38,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 81.1,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.202,
+      "monthly_km": 1444,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0542",
+    "name": "Arjun Adams",
+    "age": 49,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 108.6,
+      "hard_brakes_per_100km": 3.7,
+      "night_pct": 0.182,
+      "monthly_km": 742,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0543",
+    "name": "Emma Nair",
+    "age": 49,
+    "postcode": "6230",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 87.7,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.197,
+      "monthly_km": 939,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0544",
+    "name": "Mei Costa",
+    "age": 57,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 90.5,
+      "hard_brakes_per_100km": 5.2,
+      "night_pct": 0.079,
+      "monthly_km": 1239,
+      "harsh_corners_per_100km": 2.9
+    }
+  },
+  {
+    "id": "D0545",
+    "name": "Priya Rossi",
+    "age": 50,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 95.0,
+      "hard_brakes_per_100km": 4.0,
+      "night_pct": 0.119,
+      "monthly_km": 1335,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0546",
+    "name": "Hiro Khan",
+    "age": 52,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.2,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.239,
+      "monthly_km": 1245,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0547",
+    "name": "Marcus Kumar",
+    "age": 29,
+    "postcode": "2010",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 80.9,
+      "hard_brakes_per_100km": 4.2,
+      "night_pct": 0.137,
+      "monthly_km": 786,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0548",
+    "name": "Marcus Smith",
+    "age": 31,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 103.7,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.268,
+      "monthly_km": 724,
+      "harsh_corners_per_100km": 3.9
+    }
+  },
+  {
+    "id": "D0549",
+    "name": "Wei Chen",
+    "age": 40,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 83.3,
+      "hard_brakes_per_100km": 2.6,
+      "night_pct": 0.28,
+      "monthly_km": 1304,
+      "harsh_corners_per_100km": 3.6
+    }
+  },
+  {
+    "id": "D0550",
+    "name": "Tom Tan",
+    "age": 27,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 77.0,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.071,
+      "monthly_km": 1733,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0551",
+    "name": "Felix Nguyen",
+    "age": 48,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 80.7,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.164,
+      "monthly_km": 1174,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0552",
+    "name": "Omar Kumar",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 71.3,
+      "hard_brakes_per_100km": 1.3,
+      "night_pct": 0.32,
+      "monthly_km": 1284,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0553",
+    "name": "Wei Hassan",
+    "age": 59,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 76.1,
+      "hard_brakes_per_100km": 3.3,
+      "night_pct": 0.163,
+      "monthly_km": 1488,
+      "harsh_corners_per_100km": 4.9
+    }
+  },
+  {
+    "id": "D0554",
+    "name": "Noah Kumar",
+    "age": 64,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 73.1,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.148,
+      "monthly_km": 1327,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0555",
+    "name": "Isla Rossi",
+    "age": 25,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 89.6,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.089,
+      "monthly_km": 1732,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0556",
+    "name": "Mei Jones",
+    "age": 64,
+    "postcode": "2150",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 93.7,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.239,
+      "monthly_km": 1380,
+      "harsh_corners_per_100km": 3.7
+    }
+  },
+  {
+    "id": "D0557",
+    "name": "Noah Ali",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 78.6,
+      "hard_brakes_per_100km": 6.1,
+      "night_pct": 0.332,
+      "monthly_km": 1464,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0558",
+    "name": "Chloe Tan",
+    "age": 32,
+    "postcode": "6230",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 68.7,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.191,
+      "monthly_km": 1382,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0559",
+    "name": "Chloe Kumar",
+    "age": 31,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 62.2,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.164,
+      "monthly_km": 1593,
+      "harsh_corners_per_100km": 2.9
+    }
+  },
+  {
+    "id": "D0560",
+    "name": "Nina Evans",
+    "age": 64,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 83.5,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.101,
+      "monthly_km": 2054,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0561",
+    "name": "Layla Khan",
+    "age": 41,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 79.9,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.208,
+      "monthly_km": 1238,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0562",
+    "name": "Noah Smith",
+    "age": 47,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 78.4,
+      "hard_brakes_per_100km": 2.5,
+      "night_pct": 0.15,
+      "monthly_km": 831,
+      "harsh_corners_per_100km": 1.0
+    }
+  },
+  {
+    "id": "D0563",
+    "name": "Wei Wong",
+    "age": 24,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 81.8,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.215,
+      "monthly_km": 1783,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0564",
+    "name": "Noah Adams",
+    "age": 63,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 78.8,
+      "hard_brakes_per_100km": 2.9,
+      "night_pct": 0.192,
+      "monthly_km": 1410,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0565",
+    "name": "Emma Hassan",
+    "age": 48,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.0,
+      "hard_brakes_per_100km": 2.7,
+      "night_pct": 0.194,
+      "monthly_km": 1115,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0566",
+    "name": "Ethan Adams",
+    "age": 53,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 70.8,
+      "hard_brakes_per_100km": 3.0,
+      "night_pct": 0.111,
+      "monthly_km": 776,
+      "harsh_corners_per_100km": 2.9
+    }
+  },
+  {
+    "id": "D0567",
+    "name": "Isla Silva",
+    "age": 64,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 83.2,
+      "hard_brakes_per_100km": 1.9,
+      "night_pct": 0.25,
+      "monthly_km": 806,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0568",
+    "name": "Raj Brown",
+    "age": 27,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 75.2,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.216,
+      "monthly_km": 856,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0569",
+    "name": "Nina Singh",
+    "age": 58,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 88.5,
+      "hard_brakes_per_100km": 1.5,
+      "night_pct": 0.214,
+      "monthly_km": 1661,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0570",
+    "name": "Daniel Jones",
+    "age": 40,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 76.0,
+      "hard_brakes_per_100km": 4.1,
+      "night_pct": 0.087,
+      "monthly_km": 903,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0571",
+    "name": "Chloe Kumar",
+    "age": 52,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 92.5,
+      "hard_brakes_per_100km": 3.6,
+      "night_pct": 0.139,
+      "monthly_km": 1184,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0572",
+    "name": "Isla Nguyen",
+    "age": 34,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 68.8,
+      "hard_brakes_per_100km": 5.6,
+      "night_pct": 0.04,
+      "monthly_km": 1137,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0573",
+    "name": "Omar Taylor",
+    "age": 27,
+    "postcode": "6230",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 88.8,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.148,
+      "monthly_km": 1568,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0574",
+    "name": "Raj Adams",
+    "age": 63,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 83.3,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.155,
+      "monthly_km": 1075,
+      "harsh_corners_per_100km": 2.9
+    }
+  },
+  {
+    "id": "D0575",
+    "name": "Ava Wong",
+    "age": 39,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 87.0,
+      "hard_brakes_per_100km": 5.0,
+      "night_pct": 0.111,
+      "monthly_km": 1924,
+      "harsh_corners_per_100km": 2.5
+    }
+  },
+  {
+    "id": "D0576",
+    "name": "Arjun Wong",
+    "age": 64,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 71.7,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.174,
+      "monthly_km": 1176,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0577",
+    "name": "Liam Tan",
+    "age": 60,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.6,
+      "hard_brakes_per_100km": 5.1,
+      "night_pct": 0.202,
+      "monthly_km": 1255,
+      "harsh_corners_per_100km": 2.6
+    }
+  },
+  {
+    "id": "D0578",
+    "name": "Kai Nair",
+    "age": 62,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 91.9,
+      "hard_brakes_per_100km": 4.3,
+      "night_pct": 0.226,
+      "monthly_km": 1670,
+      "harsh_corners_per_100km": 1.2
+    }
+  },
+  {
+    "id": "D0579",
+    "name": "Tom Ali",
+    "age": 48,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 72.1,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.195,
+      "monthly_km": 1236,
+      "harsh_corners_per_100km": 1.5
+    }
+  },
+  {
+    "id": "D0580",
+    "name": "Nina Silva",
+    "age": 37,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 92.4,
+      "hard_brakes_per_100km": 4.5,
+      "night_pct": 0.28,
+      "monthly_km": 1681,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0581",
+    "name": "Marcus Walker",
+    "age": 62,
+    "postcode": "3550",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 91.1,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.095,
+      "monthly_km": 1053,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0582",
+    "name": "Ethan Hassan",
+    "age": 57,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.0,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.245,
+      "monthly_km": 1190,
+      "harsh_corners_per_100km": 3.3
+    }
+  },
+  {
+    "id": "D0583",
+    "name": "Felix O'Brien",
+    "age": 31,
+    "postcode": "2000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 91.4,
+      "hard_brakes_per_100km": 4.6,
+      "night_pct": 0.146,
+      "monthly_km": 1142,
+      "harsh_corners_per_100km": 3.0
+    }
+  },
+  {
+    "id": "D0584",
+    "name": "Chloe Park",
+    "age": 59,
+    "postcode": "2150",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 96.3,
+      "hard_brakes_per_100km": 5.8,
+      "night_pct": 0.26,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 1.6
+    }
+  },
+  {
+    "id": "D0585",
+    "name": "Chloe Khan",
+    "age": 59,
+    "postcode": "4870",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 86.6,
+      "hard_brakes_per_100km": 3.4,
+      "night_pct": 0.13,
+      "monthly_km": 1469,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0586",
+    "name": "James Taylor",
+    "age": 45,
+    "postcode": "7250",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 77.0,
+      "hard_brakes_per_100km": 5.1,
+      "night_pct": 0.04,
+      "monthly_km": 827,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0587",
+    "name": "Felix Reid",
+    "age": 58,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 76.3,
+      "hard_brakes_per_100km": 2.8,
+      "night_pct": 0.116,
+      "monthly_km": 685,
+      "harsh_corners_per_100km": 0.9
+    }
+  },
+  {
+    "id": "D0588",
+    "name": "Felix Diaz",
+    "age": 58,
+    "postcode": "2000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 67.9,
+      "hard_brakes_per_100km": 5.1,
+      "night_pct": 0.21,
+      "monthly_km": 946,
+      "harsh_corners_per_100km": 2.3
+    }
+  },
+  {
+    "id": "D0589",
+    "name": "Zara Taylor",
+    "age": 33,
+    "postcode": "3550",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 73.4,
+      "hard_brakes_per_100km": 2.2,
+      "night_pct": 0.316,
+      "monthly_km": 1237,
+      "harsh_corners_per_100km": 2.0
+    }
+  },
+  {
+    "id": "D0590",
+    "name": "Emma Garcia",
+    "age": 43,
+    "postcode": "4870",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 68.5,
+      "hard_brakes_per_100km": 1.7,
+      "night_pct": 0.117,
+      "monthly_km": 1050,
+      "harsh_corners_per_100km": 0.7
+    }
+  },
+  {
+    "id": "D0591",
+    "name": "Marcus Rossi",
+    "age": 43,
+    "postcode": "2150",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 70.7,
+      "hard_brakes_per_100km": 2.3,
+      "night_pct": 0.222,
+      "monthly_km": 1230,
+      "harsh_corners_per_100km": 3.5
+    }
+  },
+  {
+    "id": "D0592",
+    "name": "Raj O'Brien",
+    "age": 54,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 95.4,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.207,
+      "monthly_km": 500,
+      "harsh_corners_per_100km": 2.2
+    }
+  },
+  {
+    "id": "D0593",
+    "name": "Emma Kumar",
+    "age": 30,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 82.8,
+      "hard_brakes_per_100km": 1.0,
+      "night_pct": 0.195,
+      "monthly_km": 1085,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0594",
+    "name": "Tom Reid",
+    "age": 62,
+    "postcode": "2010",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 66.7,
+      "hard_brakes_per_100km": 4.4,
+      "night_pct": 0.174,
+      "monthly_km": 1196,
+      "harsh_corners_per_100km": 3.8
+    }
+  },
+  {
+    "id": "D0595",
+    "name": "Ava Evans",
+    "age": 60,
+    "postcode": "3550",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 75.7,
+      "hard_brakes_per_100km": 5.5,
+      "night_pct": 0.204,
+      "monthly_km": 1036,
+      "harsh_corners_per_100km": 1.7
+    }
+  },
+  {
+    "id": "D0596",
+    "name": "Ruby Khan",
+    "age": 33,
+    "postcode": "1000",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 79.2,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.17,
+      "monthly_km": 1503,
+      "harsh_corners_per_100km": 1.9
+    }
+  },
+  {
+    "id": "D0597",
+    "name": "James Chen",
+    "age": 59,
+    "postcode": "4870",
+    "vehicle_class": "suv",
+    "telematics": {
+      "avg_speed_kmh": 83.8,
+      "hard_brakes_per_100km": 5.7,
+      "night_pct": 0.157,
+      "monthly_km": 1550,
+      "harsh_corners_per_100km": 3.2
+    }
+  },
+  {
+    "id": "D0598",
+    "name": "Mei Nguyen",
+    "age": 27,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 86.3,
+      "hard_brakes_per_100km": 2.0,
+      "night_pct": 0.209,
+      "monthly_km": 1466,
+      "harsh_corners_per_100km": 3.4
+    }
+  },
+  {
+    "id": "D0599",
+    "name": "Wei Evans",
+    "age": 35,
+    "postcode": "7250",
+    "vehicle_class": "hatch",
+    "telematics": {
+      "avg_speed_kmh": 74.2,
+      "hard_brakes_per_100km": 3.5,
+      "night_pct": 0.15,
+      "monthly_km": 1548,
+      "harsh_corners_per_100km": 2.7
+    }
+  },
+  {
+    "id": "D0600",
+    "name": "Hiro Patel",
+    "age": 53,
+    "postcode": "1000",
+    "vehicle_class": "sedan",
+    "telematics": {
+      "avg_speed_kmh": 78.7,
+      "hard_brakes_per_100km": 4.7,
+      "night_pct": 0.187,
+      "monthly_km": 564,
+      "harsh_corners_per_100km": 4.4
+    }
+  }
+]

@@ -1,0 +1,20 @@
+# Python
+backend/.venv/
+infra/.venv/
+__pycache__/
+*.pyc
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# CDK
+infra/cdk.out/
+
+# Local AI cache + generated artifacts
+backend/.llm_cache/
+data/generated/
+
+# OS
+.DS_Store
