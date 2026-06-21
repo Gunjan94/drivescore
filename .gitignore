@@ -11,6 +11,10 @@ frontend/.vite/
 
 # CDK
 infra/cdk.out/
+infra/.venv/
+
+# Lambda build artifacts
+build/
 
 # Local AI cache + generated artifacts
 backend/.llm_cache/

@@ -1,40 +1,107 @@
-"""DriveScore CDK stack (STUB — cloud deploy deferred).
-
-Intended resources:
-  * lambda.Function (Python 3.12) bundling ../backend + ../data, handler routing
-    /score /price /explain /portfolio. InvokeMode.RESPONSE_STREAM for SSE.
-  * Function URL (auth NONE for the demo) OR an HTTP API (apigwv2).
-  * IAM: grant bedrock:InvokeModel + bedrock:InvokeModelWithResponseStream on
-    the Claude Sonnet 4.6 model ARN in ap-southeast-1.
-  * S3 bucket (static website) + BucketDeployment of ../frontend/dist.
-
-Left as a stub so the prototype runs locally with zero cloud dependencies.
 """
-# from aws_cdk import (
-#     Stack, Duration, RemovalPolicy,
-#     aws_lambda as _lambda,
-#     aws_iam as iam,
-#     aws_s3 as s3,
-#     aws_s3_deployment as s3deploy,
-# )
-# from constructs import Construct
-#
-# class DriveScoreStack(Stack):
-#     def __init__(self, scope: Construct, cid: str, **kwargs) -> None:
-#         super().__init__(scope, cid, **kwargs)
-#         fn = _lambda.Function(self, "Api",
-#             runtime=_lambda.Runtime.PYTHON_3_12,
-#             handler="lambda_handler.handler",
-#             code=_lambda.Code.from_asset("../backend"),
-#             timeout=Duration.seconds(30), memory_size=512)
-#         fn.add_to_role_policy(iam.PolicyStatement(
-#             actions=["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"],
-#             resources=["arn:aws:bedrock:ap-southeast-1::foundation-model/anthropic.claude-sonnet-4-6"]))
-#         fn.add_function_url(auth_type=_lambda.FunctionUrlAuthType.NONE,
-#             invoke_mode=_lambda.InvokeMode.RESPONSE_STREAM)
-#         site = s3.Bucket(self, "Site", website_index_document="index.html",
-#             public_read_access=True, removal_policy=RemovalPolicy.DESTROY,
-#             auto_delete_objects=True)
-#         s3deploy.BucketDeployment(self, "Deploy",
-#             sources=[s3deploy.Source.asset("../frontend/dist")],
-#             destination_bucket=site)
+DriveScore CDK stack.
+
+  * Lambda (Python 3.12, x86_64) running the FastAPI backend under the AWS
+    Lambda Web Adapter (zip + layer — no Docker). Function URL in
+    RESPONSE_STREAM mode so the /explain SSE streams natively.
+  * IAM: bedrock:InvokeModel* on Anthropic Claude models (used only when
+    USE_BEDROCK=1; the keyless live LLM + template fallback need no AWS perms).
+  * Frontend: private S3 bucket + CloudFront (OAC, HTTPS) serving frontend/dist.
+  * The frontend is built with VITE_API_BASE = the Function URL, so it calls the
+    backend directly (SSE is not buffered by CloudFront).
+
+Deployed only to the personal account <APP_ACCOUNT> / ap-southeast-1 (see app.py
+guardrail + scripts/deploy.sh account check).
+"""
+import os
+
+from aws_cdk import (
+    Stack, Duration, CfnOutput, RemovalPolicy,
+    aws_lambda as _lambda,
+    aws_iam as iam,
+    aws_s3 as s3,
+    aws_s3_deployment as s3deploy,
+    aws_cloudfront as cf,
+    aws_cloudfront_origins as origins,
+)
+from constructs import Construct
+
+REGION = "ap-southeast-1"
+# Public AWS Lambda Web Adapter layer (x86_64). Verify the latest version for
+# ap-southeast-1 at deploy time; override with LWA_LAYER_ARN env if needed.
+LWA_LAYER_ARN = os.environ.get(
+    "LWA_LAYER_ARN",
+    "arn:aws:lambda:ap-southeast-1:753240598075:layer:LambdaAdapterLayerX86_64:24",
+)
+
+
+class DriveScoreStack(Stack):
+    def __init__(self, scope: Construct, cid: str, **kwargs) -> None:
+        super().__init__(scope, cid, **kwargs)
+
+        backend_asset = os.environ.get("BACKEND_ASSET", "../build/backend")
+        frontend_asset = os.environ.get("FRONTEND_ASSET", "../frontend/dist")
+
+        fn = _lambda.Function(
+            self, "Api",
+            runtime=_lambda.Runtime.PYTHON_3_12,
+            architecture=_lambda.Architecture.X86_64,
+            handler="lambda_function.handler",
+            code=_lambda.Code.from_asset(backend_asset),
+            timeout=Duration.seconds(60),
+            memory_size=1024,
+            environment={
+                "DATA_DIR": "/var/task/data",
+                "LLM_ENABLED": "1",
+                "USE_BEDROCK": os.environ.get("USE_BEDROCK", "0"),
+                "AWS_REGION_BEDROCK": REGION,
+            },
+        )
+
+        fn.add_to_role_policy(iam.PolicyStatement(
+            actions=["bedrock:InvokeModel", "bedrock:InvokeModelWithResponseStream"],
+            resources=[f"arn:aws:bedrock:{REGION}::foundation-model/anthropic.*"],
+        ))
+
+        furl = fn.add_function_url(
+            auth_type=_lambda.FunctionUrlAuthType.NONE,
+            cors=_lambda.FunctionUrlCorsOptions(
+                allowed_origins=["*"],
+                allowed_methods=[_lambda.HttpMethod.ALL],
+                allowed_headers=["*"],
+            ),
+        )
+
+        site = s3.Bucket(
+            self, "Site",
+            block_public_access=s3.BlockPublicAccess.BLOCK_ALL,
+            removal_policy=RemovalPolicy.DESTROY,
+            auto_delete_objects=True,
+            enforce_ssl=True,
+        )
+
+        dist = cf.Distribution(
+            self, "Cdn",
+            default_behavior=cf.BehaviorOptions(
+                origin=origins.S3BucketOrigin.with_origin_access_control(site),
+                viewer_protocol_policy=cf.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+            ),
+            default_root_object="index.html",
+            error_responses=[
+                cf.ErrorResponse(http_status=403, response_http_status=200, response_page_path="/index.html"),
+                cf.ErrorResponse(http_status=404, response_http_status=200, response_page_path="/index.html"),
+            ],
+            comment="DriveScore static site",
+        )
+
+        s3deploy.BucketDeployment(
+            self, "Deploy",
+            sources=[s3deploy.Source.asset(frontend_asset)],
+            destination_bucket=site,
+            distribution=dist,
+            distribution_paths=["/*"],
+        )
+
+        CfnOutput(self, "FunctionUrl", value=furl.url)
+        CfnOutput(self, "SiteUrl", value=f"https://{dist.distribution_domain_name}")
+        CfnOutput(self, "BucketName", value=site.bucket_name)

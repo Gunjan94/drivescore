@@ -6,7 +6,9 @@ import os
 from functools import lru_cache
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_DATA_DIR = os.path.normpath(os.path.join(_HERE, "..", "data"))
+# DATA_DIR env lets the Lambda package place data/ alongside the code; falls
+# back to the local ../data layout for dev.
+_DATA_DIR = os.environ.get("DATA_DIR") or os.path.normpath(os.path.join(_HERE, "..", "data"))
 
 
 @lru_cache(maxsize=1)

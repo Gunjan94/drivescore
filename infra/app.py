@@ -1,20 +1,31 @@
-"""CDK app entry point (STUB — cloud deploy deferred for this prototype).
+"""CDK app entry — DriveScore.
 
-When fleshed out this will synthesize the DriveScoreStack: a Python 3.12 Lambda
-(response streaming enabled) fronting engine.py/explain.py, a Function URL or
-HTTP API, an IAM role granting bedrock:InvokeModelWithResponseStream, and an S3
-static site for the built frontend. Region: ap-southeast-1 (fallback us-east-1).
-
-The backend handlers in ../backend are written as plain functions specifically
-so they can be lifted into a Lambda handler with minimal change.
+Pinned to the PERSONAL account <APP_ACCOUNT> / ap-southeast-1. A guardrail aborts
+synth/deploy if the resolved credentials point anywhere else, so a stray default
+(work) profile can never deploy this stack.
 """
-# import aws_cdk as cdk
-# from drivescore_stack import DriveScoreStack
-#
-# app = cdk.App()
-# DriveScoreStack(app, "DriveScoreStack",
-#                 env=cdk.Environment(region="ap-southeast-1"))
-# app.synth()
+import os
+import sys
 
-if __name__ == "__main__":
-    print("infra/ is a stub — cloud deploy is deferred. Run locally: ./scripts/dev.sh")
+import aws_cdk as cdk
+
+from drivescore_stack import DriveScoreStack
+
+ACCOUNT = "<APP_ACCOUNT>"
+REGION = "ap-southeast-1"
+
+resolved = os.environ.get("CDK_DEFAULT_ACCOUNT")
+if resolved and resolved != ACCOUNT:
+    sys.exit(
+        f"\n[GUARDRAIL] Refusing to deploy: resolved AWS account {resolved} != "
+        f"personal account {ACCOUNT}.\nUse the personal profile, e.g. "
+        f"`AWS_PROFILE=gunjan-aws cdk deploy`.\n"
+    )
+
+app = cdk.App()
+DriveScoreStack(
+    app, "DriveScoreStack",
+    env=cdk.Environment(account=ACCOUNT, region=REGION),
+    description="DriveScore — usage-based motor insurance prototype (personal account only)",
+)
+app.synth()

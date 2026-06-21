@@ -73,7 +73,9 @@ export interface Portfolio {
   summary: PortfolioSummary;
 }
 
-const API = "/api";
+// In dev, Vite proxies /api -> backend (see vite.config.ts). In production the
+// build is given the Lambda Function URL via VITE_API_BASE.
+const API = (((import.meta as unknown as { env?: Record<string, string> }).env?.VITE_API_BASE) as string | undefined) || "/api";
 
 async function postJSON<T>(path: string, body: unknown): Promise<T> {
   const res = await fetch(`${API}${path}`, {
