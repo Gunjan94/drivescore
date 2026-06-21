@@ -17,9 +17,9 @@ from typing import Iterator
 
 from data import load_explain_cache
 
-# Bedrock model + region per BUILDER.md. The "anthropic." prefix is the Bedrock
-# model-id convention; the bare id is claude-sonnet-4-6.
-BEDROCK_MODEL_ID = os.environ.get("BEDROCK_MODEL_ID", "anthropic.claude-sonnet-4-6")
+# Bedrock model: in ap-southeast-1 claude-sonnet-4-6 must be invoked via its
+# (global) inference profile, not the bare on-demand model id.
+BEDROCK_MODEL_ID = os.environ.get("BEDROCK_MODEL_ID", "global.anthropic.claude-sonnet-4-6")
 BEDROCK_REGION = os.environ.get("AWS_REGION", "ap-southeast-1")
 # Explicit opt-in; if unset we still TRY Bedrock and fall back on any failure.
 USE_BEDROCK = os.environ.get("USE_BEDROCK", "").strip() in ("1", "true", "True")
