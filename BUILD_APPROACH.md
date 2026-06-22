@@ -1,3 +1,13 @@
+> **Current-state addendum (2026-06-22).** This build write-up predates the 2026-06-22 fleet reframe and is
+> kept as build history. Authoritative current docs: **README.md**, **ARCHITECTURE.md**, **DEMO_SCRIPT.md**.
+> What changed: reframed from a B2C consumer motor product into a **B2B fleet** risk & insurance platform —
+> operator **Ninja Logistics**, insurer **Etiqa**; four views (Fleet Command / Driver Detail / Insurer View /
+> Rating Lab); a live **fleet ride map** (Leaflet, per-driver home bases) via `/fleet/summary`, `/fleet/trips`,
+> `/driver/{id}/trips`; a whole-fleet-vs-selected Insurer View with clickable mispriced lists; transparency
+> drill-downs; a two-audience pitch; and a full responsive pass. **Deployed & live:** https://d1kfb74r3kp75u.cloudfront.net.
+
+---
+
 # DriveScore — Build Approach & Considerations
 
 *The 1–2 page write-up deliverable. Pre-filled from the design; `[fill after building]` marks slots that need real build results.*

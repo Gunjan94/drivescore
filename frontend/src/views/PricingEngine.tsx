@@ -24,10 +24,10 @@ interface SliderDef {
 
 const SLIDERS: SliderDef[] = [
   { key: "night_pct", label: "Night driving", min: 0, max: 0.6, step: 0.01, format: (v) => `${Math.round(v * 100)}%` },
-  { key: "hard_brakes_per_100km", label: "Hard braking / 100km", min: 0, max: 12, step: 0.1, format: (v) => v.toFixed(1) },
+  { key: "hard_brakes_per_100km", label: "Hard braking (per 100 km)", min: 0, max: 12, step: 0.1, format: (v) => v.toFixed(1) },
   { key: "avg_speed_kmh", label: "Average speed", min: 40, max: 130, step: 1, format: (v) => `${v} km/h` },
-  { key: "harsh_corners_per_100km", label: "Harsh cornering / 100km", min: 0, max: 8, step: 0.1, format: (v) => v.toFixed(1) },
-  { key: "monthly_km", label: "Monthly mileage", min: 200, max: 3000, step: 10, format: (v) => `${v} km` },
+  { key: "harsh_corners_per_100km", label: "Sharp cornering (per 100 km)", min: 0, max: 8, step: 0.1, format: (v) => v.toFixed(1) },
+  { key: "monthly_km", label: "Monthly distance", min: 200, max: 3000, step: 10, format: (v) => `${v} km` },
 ];
 
 const NAME: Record<string, string> = {
@@ -112,23 +112,21 @@ export function PricingEngine() {
   const tier = price ? tierFor(price.band) : null;
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-8">
-      <div className="flex items-baseline justify-between mb-6 flex-wrap gap-2">
-        <div>
-          <h1 className="text-3xl font-bold">Live Rating Engine</h1>
-          <div className="text-muted">
-            Indicative quote · adjust the telematics profile — DriveScore and premium re-rate live on the backend.
-          </div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+      <div className="mb-5 sm:mb-6">
+        <div className="text-muted text-[11px] uppercase tracking-wide">Try it · pricing &amp; coaching what-if</div>
+        <h1 className="text-2xl sm:text-3xl font-bold leading-tight">Rating Lab</h1>
+        <div className="text-muted text-sm">
+          Drag a vehicle's driving profile and watch its DriveScore &amp; premium update live.
         </div>
-        <span className="text-muted text-sm">Underwriting · rating workbench</span>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6">
         {/* Telematics profile (the levers) */}
-        <div className="card p-8">
+        <div className="card p-6 sm:p-8">
           <div className="flex items-baseline justify-between mb-5">
-            <h2 className="text-lg font-semibold">Telematics profile</h2>
-            <span className="text-muted text-xs">90-day driving signals</span>
+            <h2 className="text-lg font-semibold">Driving profile</h2>
+            <span className="text-muted text-xs">last 90 days of driving</span>
           </div>
           {SLIDERS.map((s) => (
             <div key={s.key} className="mb-6">
@@ -164,12 +162,12 @@ export function PricingEngine() {
               });
             }}
           >
-            Reset to applicant profile (SUV · age 29)
+            Reset to fleet vehicle profile (MPV/SUV)
           </button>
         </div>
 
         {/* Quote: score + indicative premium */}
-        <div className="card p-8 flex flex-col gap-6">
+        <div className="card p-6 sm:p-8 flex flex-col gap-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
             <div className="flex justify-center">{price && <Gauge score={price.drivescore} band={price.band} />}</div>
             <div>
@@ -187,23 +185,23 @@ export function PricingEngine() {
         </div>
 
         {/* Factor breakdown */}
-        <div className="card p-8">
-          <h2 className="text-lg font-semibold mb-4">Rating factor breakdown</h2>
+        <div className="card p-6 sm:p-8">
+          <h2 className="text-lg font-semibold mb-4">What's driving the score</h2>
           {price && <FactorBars factors={price.factors} topN={5} />}
         </div>
 
         {/* AI rationale */}
-        <div className="card p-8 flex flex-col">
+        <div className="card p-6 sm:p-8 flex flex-col">
           <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-            <span style={{ color: theme.color.accent }}>◆</span> Underwriting rationale
+            <span style={{ color: theme.color.accent }}>◆</span> Why this price
           </h2>
           <StreamingText text={explainText} streaming={streaming} />
         </div>
       </div>
 
       <p className="text-muted text-xs mt-6 leading-relaxed">
-        Indicative quote only — not a binding offer. Final premium subject to underwriting, declarations and
-        verification of telematics data. Comprehensive cover, Singapore. NCD {QUOTE_NCD}% applied.
+        Example only — not a real quote. The final premium depends on underwriting and verified driving data.
+        Comprehensive cover, Singapore. No-claims discount {QUOTE_NCD}% applied.
       </p>
     </div>
   );

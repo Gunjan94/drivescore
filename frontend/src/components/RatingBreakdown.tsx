@@ -15,18 +15,18 @@ export function RatingBreakdown({ pv }: { pv: PremiumView }) {
 
   return (
     <div>
-      <div className="text-muted text-xs tracking-widest uppercase mb-3">Premium build-up · annual</div>
+      <div className="text-muted text-xs tracking-widest uppercase mb-3">How the premium is worked out · per year</div>
 
-      <Line label="Base premium" sub="vehicle segment" value={sgd(pv.baseAnnual)} />
+      <Line label="Starting premium" sub="for this vehicle type" value={sgd(pv.baseAnnual)} />
       <Line
-        label="DriveScore behaviour adjustment"
-        sub={pv.behaviourAdj <= 0 ? "safe-driving discount" : "risk surcharge"}
+        label="DriveScore driving adjustment"
+        sub={pv.behaviourAdj <= 0 ? "safe-driving discount" : "risky-driving surcharge"}
         value={`${pv.behaviourAdj <= 0 ? "−" : "+"}${sgd(Math.abs(pv.behaviourAdj))}`}
         color={adjColor}
       />
       <Line
-        label={`No Claims Discount (${pv.ncd}%)`}
-        sub="claim-free history"
+        label={`No-claims discount (${pv.ncd}%)`}
+        sub="for a clean claims record"
         value={`−${sgd(pv.ncdAmount)}`}
         color={theme.color.good}
       />
@@ -35,8 +35,8 @@ export function RatingBreakdown({ pv }: { pv: PremiumView }) {
 
       <div className="flex items-end justify-between">
         <div>
-          <div className="text-muted text-xs tracking-widest uppercase">Annual premium payable</div>
-          <div style={{ fontSize: 44, fontWeight: 800, lineHeight: 1.05 }}>{sgd(pv.payableAnnual)}</div>
+          <div className="text-muted text-xs tracking-widest uppercase">Premium to pay · per year</div>
+          <div style={{ fontSize: "clamp(30px, 8vw, 44px)", fontWeight: 800, lineHeight: 1.05 }}>{sgd(pv.payableAnnual)}</div>
           <div className="text-muted text-sm">{sgd(pv.payableMonthly, 2)}/mo · 12 monthly instalments</div>
         </div>
       </div>
@@ -49,11 +49,11 @@ export function RatingBreakdown({ pv }: { pv: PremiumView }) {
         }}
       >
         <div className="text-sm min-w-0">
-          <div className="text-muted">Standard rate-table</div>
+          <div className="text-muted">Old flat rate</div>
           <div className="line-through text-muted tabular-nums whitespace-nowrap">{sgd(pv.standardAnnual)}/yr</div>
         </div>
         <div className="text-right shrink-0">
-          <div className="text-xs text-muted whitespace-nowrap">{saving ? "You save vs standard" : "Above standard"}</div>
+          <div className="text-xs text-muted whitespace-nowrap">{saving ? "You save vs old rate" : "Above old rate"}</div>
           <div className="font-bold text-xl tabular-nums whitespace-nowrap" style={{ color: saving ? theme.color.good : theme.color.bad }}>
             {saving ? "−" : "+"}{sgd(Math.abs(pv.savingAnnual))}/yr
           </div>

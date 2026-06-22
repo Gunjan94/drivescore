@@ -1,209 +1,216 @@
 # DriveScore — Executive Pitch & Walkthrough (read-through)
 
-**The pitch, not a feature tour.** You are an AWS Innovation Hub engineer presenting to the
-**CEO of a regional motor insurer** who is visiting the Hub. The prototype — *Meridian Motor ·
-DriveScore*, usage-based motor insurance in Singapore (SGD) — is the **proof** inside the pitch.
-Every line is spoken *to that CEO*, about *their* business: their churn, their loss ratio, their
-board. The live demo exists to prove the claim is real, not to show off screens.
+> **⚠️ The walkthrough recording itself is a human task.** This script is the read-through for the
+> 5–10 min screen-and-voice recording, but recording the screen with a voice-over has to be done by a
+> person — an agent can't capture screen + audio. Everything below is ready to read aloud against the
+> live app; produce the recording from it.
 
-**Length:** ~8:30 spoken, inside the 10-min cap. **Arc:** their problem → the stakes → the idea →
-live proof → the business case → why now / the ask.
+**The pitch, not a feature tour — and it has *two* audiences.** You are an AWS Innovation Hub engineer
+presenting *DriveScore — a fleet risk & insurance platform*. Two decision-makers are in the room, and
+the product solves a problem they share from opposite sides:
 
-**How to use this:** read the quoted lines aloud, unhurried. **[Bracketed bold]** = what to click.
-The numbers below are the actual seeded values — they will match the screen.
+- **The Fleet CEO** — *Ninja Logistics* (a Singapore last-mile fleet; synthetic, standing in for the
+  ComfortDelgro / Grab / Ninja Van kind of operator). They run ~600 vehicles and want **safer drivers
+  and a lower insurance bill.**
+- **The Insurer owner** — *Etiqa*, who underwrites that fleet's commercial motor cover and wants to
+  **price real risk instead of a blunt table.**
+
+DriveScore turns the telematics the fleet already streams into a live risk score, and it makes both
+people win: the operator coaches its way to a cheaper premium; the insurer stops overcharging the safe
+and underpricing the risky. The live demo is the **proof** inside the pitch.
+
+**Length:** ~9:00 spoken, inside the 10-min cap. **Arc:** the shared problem → pitch to the Fleet CEO
+(live) → pitch to the Insurer owner (live) → "is it real?" → the business case for both → why now / ask.
+
+**How to use this:** read the quoted lines aloud, unhurried. **[Bracketed bold]** = what to click. The
+numbers are the actual seeded values and will match the screen.
 
 > **Pre-flight:** backend `:8000`, frontend `:5173`, full-screen at http://localhost:5173/, open on
-> the **Driver Dashboard**. Clean desktop, notifications off, 1080p. Dry-run the two slider drags.
+> **Fleet Command**. Clean desktop, notifications off, 1080p, **light theme**. Dry-run the map click,
+> the persona switch, and the two slider drags in the Rating Lab.
 
 ---
 
-## 0:00 – 0:50 — Open in *their* world (the cost of doing nothing)
-**[On screen: Driver Dashboard, Sarah's view, idle. Don't touch anything.]**
+## 0:00 – 0:50 — The shared problem (why both people are losing)
+**[On screen: Fleet Command, idle — the fleet ride map visible. Don't touch anything yet.]**
 
-> "Thanks for the time. Before I show you anything, let me describe a problem I think you already
-> live with — and what it's quietly costing you."
+> "Thanks for the time. There are two of you here, and that's deliberate — because you're on opposite
+> sides of the same broken deal, and it's costing you both."
 
-> "Right now, you price motor policies off a static table: age, postcode, vehicle. Everyone in the
-> same bracket pays the same. Which means two things are happening in your book at all times. Your
-> *safest* drivers are being overcharged — so they shop around and leave. And your *riskiest*
-> drivers are being underpriced — so you keep them, right up until they become a claim. You're
-> losing the customers you want and subsidising the ones you don't."
+> "You" — *to the Fleet CEO* — "run hundreds of vehicles. Your single biggest controllable cost after
+> fuel is insurance, and right now you pay a premium set off a blunt commercial-motor table. It can't
+> tell your safest driver from your most dangerous one, so your good drivers subsidise your bad ones,
+> and you have no lever to lower the bill except 'have fewer accidents and hope.'"
 
-> "And here's the part that should sting: the data that would fix both of those is *already yours*.
-> You're collecting telematics today — speed, braking, time of day — and it's sitting in a data
-> lake, untouched. So this isn't a data problem. It's an activation problem. Let me show you what it
-> looks like when you switch it on. We built this on your scenario in a few days."
+> "And you" — *to the Insurer* — "are pricing that whole fleet as one averaged risk. So you overcharge
+> the safe operators — who leave — and underprice the dangerous ones — who stay, until they're a claim.
+> You're losing the fleets you want and keeping the ones you don't."
+
+> "The data that fixes both of those is *already being collected* — every vehicle streams speed,
+> braking, time of day. It's sitting in a data lake, untouched. So this isn't a data problem, it's an
+> activation problem. Let me switch it on — on your fleet."
 
 ---
 
-## 0:50 – 4:30 — The proof: a live, working system
+## 0:50 – 4:00 — Pitch to the Fleet CEO (the operator's view)
 
-### Meet your best customer — and what you're doing to her  (~0:50 – 2:10)
-**[Point to the DriveScore gauge: 91, "Platinum driver".]**
-> "This is Sarah — one of your customers. Her DriveScore is eighty-six out of a hundred, calculated
-> from how she actually drives over the last ninety days. She's genuinely one of the safest drivers
-> on your book."
-
-**[Point to the policy card — NCD 50%, Comprehensive, policy number.]**
-> "She's also exactly who you can't afford to lose: comprehensive cover, No-Claims Discount maxed at
-> fifty percent, loyal, never claimed. And yet—"
-
-**[Move to the premium build-up panel — read it down.]**
-> "—under your static table she's *overpaying*. Watch how DriveScore prices her instead, in the
-> open: base premium for her car, then a safe-driving discount she earned, then her No-Claims
-> Discount. She lands about four hundred and twenty dollars a year below your standard rate — roughly
-> thirty-five dollars a month. That's not a giveaway. That's the price her risk actually justifies —
-> and it's the difference between Sarah renewing with you and Sarah leaving for the competitor who
-> *does* offer this."
-
-**[Point to the recent-trips feed, then the streaming AI coach.]**
-> "She sees exactly why — every trip scored, every event flagged — and the system coaches her, in
-> plain English, generated live, on how to save even more. That's a customer who now has a *reason*
-> to stay and a *reason* to drive more safely. Your loss ratio thanks her twice."
-
-**[Point to the Claims history panel — green 'Low risk confirmed' banner, 5 claim-free years.]**
-> "And this isn't just a model's opinion. Here's your own claims record for Sarah: five years,
-> not a single claim. Your data already *agrees* she's low-risk — and you're still overcharging her.
-> That's the gap DriveScore closes."
-
-### The other side of your book — switch to Marcus  (~2:00 – 2:45)
-**[Use the persona switcher at the top — click "Marcus Reid · Risky · underpriced."]**
-> "Now let me show you the customer you *don't* see today. Same app, different driver — Marcus."
-
-**[The whole dashboard re-rates live: score drops to the watch tier, premium flips to a surcharge.]**
-> "His DriveScore is thirty. The behaviour is all there — frequent hard braking and aggressive
-> cornering — and the system is telling you he's underpriced on your static table."
-
-**[Point to Marcus's Claims history — red 'Risk confirmed by claims' banner, two at-fault claims.]**
-> "But here's the part that should stop you. Look at his claims: two at-fault accidents — and the
-> system links them straight back to the exact behaviours it flagged. A rear-end collision tied to
-> hard braking; an intersection collision tied to harsh cornering. The model didn't guess. Your own
-> claims history *confirms* it called the risk — and the static table charged him as if none of it
-> happened. That's the loss leakage, with a name and a face."
-
-### "Is this real?" — break it live  (~2:45 – 3:45)
-**[Switch to the "Live Rating Engine" tab — five sliders, a riskier applicant.]**
-> "So is this a real engine, or a nice animation? Let's not pretend — let's try to break it. This is
-> your underwriter's live rating workbench, quoting a fresh applicant. Pick any behaviour."
-
-**[Drag night-driving hard to the extreme.]**
-> "I'll push this driver to heavy night driving."
-
-**[Score drops, premium re-rates, factor bars re-rank, AI rationale re-streams.]**
-> "The score fell, the premium re-rated up — live, on the backend, not a stored number. And the
-> rationale it's writing—"
-
-**[Let the AI text land — it names night-driving, unscripted.]**
-> "—it named night-driving as the top factor on its own, because it's reading the real number the
-> engine just produced. Let me change my mind—"
-
-**[Drag hard-braking up; the rationale shifts to hard-braking.]**
-> "—now it's hard-braking. The price, the score, and the explanation never disagree. That matters to
-> you for one specific reason: when a regulator or a customer asks *why* a premium is what it is, you
-> have a defensible, transparent answer every single time."
-
-### Your whole book, on one screen  (~3:30 – 4:30)
-**[Switch to the Underwriter Console — KPI strip, mispricing map.]**
-> "One driver is a story. Here's your *business* — a fifty-thousand-policy book. Every dot is a
-> customer: their real risk against what they pay you today."
-
-**[Point top-left, then bottom-right.]**
-> "Top-left: safe drivers you're overcharging — a hundred and ninety of them — that's your churn,
-> already in motion. Bottom-right: risky drivers you're underpricing — that's loss leakage you can't
-> see today. For the first time, both are *named*, before they cost you."
+### Your whole fleet, where it actually drives  (~0:50 – 2:00)
+**[Fleet Command. Gesture across the map — routes radiating from home bases across Singapore.]**
+> "This is your fleet — six hundred vehicles — and this is where they actually drove this week. Each
+> driver takes their van home and parks it, so every route starts and ends at a driver's home base, and
+> the drive home counts too. Green routes are safe; red routes aren't. The dots are real events —
+> hard braking, speeding, night driving — plotted where they happened."
 
 **[Point to the KPI strip.]**
-> "And here's what it does to the numbers your board watches. Your loss ratio today sits near
-> seventy-six percent — not because your rates are wrong on paper, but because your best drivers keep
-> lapsing and leaving you a riskier residual book. Retain them and it settles to seventy-two — a
-> near-four-point improvement in your loss ratio. In motor, four points is enormous. Retention up six
-> points. That's not a feature — that's your combined ratio moving."
+> "Up here is the headline. Fleet safety score: sixty-three out of a hundred. Two hundred and sixteen
+> of your six hundred drivers are in the high-risk band — that's more than a third of your fleet, and
+> today you can't see who they are until one of them has an accident."
+
+**[Point to the insurance-impact panel, then the 'Show how this is calculated' link.]**
+> "And here's what it means in money. On the old flat rate, this fleet is billed about eight hundred
+> and seventy-three thousand dollars a year. Priced on how your drivers *actually* drive, it's six
+> hundred and sixty-eight thousand — **two hundred and four thousand dollars a year lower**, today,
+> just for being measured fairly." **[Click 'Show how this is calculated'.]** "And it's not a black
+> box — here's the math, vehicle by vehicle."
+
+**[Point to the coaching-upside line.]**
+> "Then there's the part you control. If you coach your high-risk drivers up to a safe baseline, the
+> premium drops another sixty-three thousand a year. For the first time, safety isn't just a slogan on
+> a poster — it's a line item you can move."
+
+### Drill into the driver who's costing you  (~2:00 – 3:10)
+**[Open the 'Needs coaching' leaderboard, click the worst driver — opens Driver Detail (Marcus).]**
+> "Let's go from the fleet to one driver. This is Marcus — one of your worst, based at Bukit Batok.
+> His DriveScore is thirty."
+
+**[Point to his trip map, then the factor breakdown.]**
+> "Here's where *he* drives — and the red, the hard-braking and night-driving events, jump out. The
+> system tells you in plain English exactly what's dragging his score down and what to coach first."
+
+**[Point to Marcus's Claims history — red 'Risk confirmed by claims' banner, two at-fault claims.]**
+> "And this isn't a model's opinion. Here's his claims record: two at-fault accidents — and the system
+> links them straight to the behaviours it flagged. A rear-end collision tied to hard braking; an
+> intersection collision tied to harsh cornering. The model called the risk; your own claims confirm
+> it. *That's* the driver to put on a coaching plan on Monday — and the premium follows."
+
+### The flip side — your best driver  (~3:10 – 4:00)
+**[Persona switch → Sarah. Dashboard re-rates live: score up, 'safe' tier.]**
+> "Now the opposite. Sarah — DriveScore eighty-six, one of your safest. On a flat fleet rate she's
+> invisible; here she's the proof your fleet is getting safer, and the reason your premium is coming
+> down. Coach the Marcuses toward Sarah and the whole bill moves."
 
 ---
 
-## 4:30 – 6:00 — The business case (speak to the P&L)
-**[Stay on the Underwriter Console / repricing-impact panel.]**
+## 4:00 – 5:30 — Pitch to the Insurer owner (the underwriting view)
 
-> "So let's talk money, because that's the only language this decision is made in. On a book this
-> size, the model projects retention up six points — that's your best customers, like Sarah, staying
-> instead of leaving — and roughly three and a half million dollars a year in loss leakage recovered,
-> from finally pricing the risky tail correctly."
+**[Switch to the Insurer View — the 'Across the whole fleet' section first.]**
+> "Now to you" — *to the Insurer*. "Same data, your job: price this fleet correctly. Today you'd quote
+> it as one averaged risk. Watch what you can see instead."
 
-> "Those two levers — keep the good, correctly price the bad — are exactly the two halves of an
-> underwriting loss. And you fund all of it with data you *already own and already pay to collect*.
-> There's no new data acquisition cost. The asset is just sitting there unused."
+**[Point to the two mispriced counters.]**
+> "Across the fleet, a hundred and ninety-one vehicles are *safe but overcharged* — those are the
+> drivers, and the fleets, you lose to a competitor. A hundred and seventeen are *risky but
+> underpriced* — that's loss leakage you're absorbing without seeing it."
 
-> "And this isn't speculative. Progressive built a multi-billion-dollar book on exactly this with
-> Snapshot; Discovery's Vitality Drive is already live across this region. Usage-based motor is table
-> stakes in mature markets and it's coming here fast. The insurer who offers a fair, transparent,
-> behaviour-based
-> price wins the safe drivers — and the laggards inherit everyone else's bad risk. This is a window,
-> and it's open now."
+**[Click the 'Risky but underpriced' counter — the driver list opens.]**
+> "And these aren't abstractions. Tap the group and you get the actual vehicles, worst first." **[Click
+> a driver → it loads into 'Selected vehicle' beside the map.]** "Pick one and you see its real rating,
+> old rate versus behaviour-based, and its claims — one vehicle at a time, cleanly separated from the
+> fleet totals so you always know what you're looking at."
 
----
-
-## 6:00 – 7:15 — Why it's low-risk to do (architecture, framed for a CEO)
-**[Show the architecture diagram, or stay on the app.]**
-
-> "Your fair question is: what does it take, and how risky is it to build? The honest answer is —
-> far less than you'd expect, and that's the point of showing you a *working* system, not slides."
-
-> "It's a clean, modern stack on AWS. A web front end your customers and underwriters use, a single
-> piece of pricing logic running serverless on AWS Lambda — a transparent, weighted-rules engine, so
-> nothing about your pricing is a black box you can't defend. The plain-English explanations come
-> from Claude on Amazon Bedrock, and — this is the important design choice — the AI is fed the
-> engine's real numbers, so it can never contradict your actual price. That's what makes it safe to
-> put in front of a customer or a regulator."
-
-> "It's serverless, so it costs almost nothing when idle and scales to your whole book without a data
-> centre. It runs entirely on synthetic data here — no real customer records, no privacy exposure in
-> the prototype. And we built this proof in days, not quarters. With AWS and the Innovation Hub, you
-> can pilot this on a slice of your real book within weeks."
+**[Point to the KPI strip.]**
+> "And here's what it does to the numbers you report. Claims cost ratio today sits near seventy-six
+> percent — not because your rates are wrong on paper, but because the safe fleets keep lapsing and
+> leaving you a riskier residual book. Price on behaviour and retain them, and it settles to seventy-two
+> — a near-four-point improvement. In motor, four points is enormous. Drivers retained, up six points."
 
 ---
 
-## 7:15 – 8:15 — Close + the ask
-**[Return to the repricing-impact panel — leave the business outcome on screen.]**
+## 5:30 – 6:30 — "Is this real?" — break it live
+**[Switch to the Rating Lab — five sliders on one vehicle.]**
+> "Fair question from both of you: is this a real engine, or a nice animation? Let's try to break it.
+> This re-prices a single vehicle live. Pick any behaviour."
 
-> "So here's what we've actually done in this short time. We took data you already had and turned it
-> into three things: a fair price and a clear reason for Sarah, so she stays. An early-warning system
-> for your underwriters, so risk is priced before it becomes a claim. And two numbers your board
-> moves on — retention, and loss ratio."
+**[Drag night-driving to the extreme.]**
+> "I'll push this vehicle to heavy night driving."
 
-> "What I'd propose is simple: let us run this against a sample of your *real* book in a focused
-> pilot. You'll see your actual Sarahs, your actual underpriced risk, and a hard projection of the
-> retention and loss-ratio impact on your numbers — not mine. If the pilot says what this prototype
-> says, you'll have the business case to roll it out."
+**[Score drops, premium re-rates, factor bars re-rank, AI rationale re-streams.]**
+> "The score fell, the price re-rated up — live on the backend, not a stored number. And the
+> explanation it's writing—" **[let the AI text land — it names night driving]** "—named night driving
+> on its own, because it's reading the real number the engine just produced. Let me change my mind—"
 
-> "You already own the data. The only question is whether you'd rather activate it — or watch a
-> competitor do it for your customers. That's DriveScore. I'd love to scope the pilot with your team."
+**[Drag hard-braking up; the rationale shifts to hard-braking.]**
+> "—now it's hard braking. The price, the score, and the explanation never disagree. That matters to
+> both of you: when a driver, a fleet manager, or a regulator asks *why* a premium is what it is, the
+> answer is transparent every single time."
+
+---
+
+## 6:30 – 8:00 — The business case (both sides win)
+**[Back to Fleet Command's insurance-impact panel, or the Insurer View KPIs.]**
+
+> "So let's talk money, because that's the only language this gets decided in — and the point is it's
+> the *same* money, working for both of you."
+
+> "For the fleet: a fair price today worth about two hundred thousand dollars a year, plus another
+> sixty-odd thousand you unlock by coaching — funded entirely by data you already pay to collect. No
+> new hardware, no new data cost."
+
+> "For the insurer: you keep the safe fleets you were losing, you price the risky tail correctly
+> instead of bleeding on it, and your loss ratio moves four points the right way. You're not cutting
+> price — you're *aiming* it."
+
+> "And these two aren't in tension — that's the whole idea. The operator gets cheaper insurance *by
+> getting safer*; the insurer gets a better book *by rewarding that*. Usage-based motor is already
+> table stakes in mature markets — Progressive's Snapshot, Discovery's Vitality Drive. The first
+> insurer to offer fleets a fair, behaviour-based price wins the safe operators; the laggards inherit
+> everyone else's bad risk. The window is open now."
+
+---
+
+## 8:00 – 9:00 — Why it's low-risk to build + the ask
+**[Architecture diagram, or stay on the app.]**
+
+> "What does it take, and how risky is it to build? Less than you'd expect — that's why I'm showing you
+> a *working* system, not slides. A web front end, one transparent pricing engine running serverless on
+> AWS Lambda — weighted rules, no black box you can't defend — and the plain-English explanations come
+> from a live model that's *fed the engine's real numbers*, so it can never contradict your price. It's
+> serverless, near-zero when idle, scales to the whole fleet, and runs on synthetic data here — no real
+> records, no privacy exposure. We built this proof in days."
+
+> "So here's the ask. Let us run this against a slice of your *real* fleet and its *real* claims, in a
+> focused pilot. The fleet sees its actual risky drivers and a hard projection of the premium it can
+> unlock by coaching; the insurer sees the actual mispriced book and the loss-ratio impact — your
+> numbers, not mine. You already own the data. The only question is whether you activate it together —
+> or wait for a competitor to do it for your drivers. That's DriveScore. Let's scope the pilot."
 
 **[Hold on the impact panel for a beat, then stop recording.]**
 
 ---
 
 ## Click-cue cheat sheet
-1. **Open** on Driver Dashboard (Sarah) — do *not* interact during the 0:00 problem framing.
-2. **Dashboard (Sarah):** gauge (91, Platinum) → policy card (NCD 50%) → premium build-up (−S$420/yr) → trips → live coach → **Claims (green 'Low risk confirmed', 5 claim-free yrs)**.
-3. **Persona switch → Marcus:** dashboard re-rates live (score 30, surcharge) → **Claims (red 'Risk confirmed', 2 at-fault, linked to hard braking + harsh cornering)**.
-4. **Live Rating Engine:** drag **night-driving** to extreme → let AI name it → drag **hard-braking** → let AI re-name it. *(This is a fresh applicant, not one of the three personas.)*
-5. **Underwriter Console:** top-left cluster → bottom-right cluster → KPI strip (loss ratio 75.8→72.0%, retention +6.2pp) → optionally click Marcus's dot to show his claims in the inspect panel.
-6. **Business case + architecture:** stay on Console / impact panel while narrating.
-7. **Close:** repricing-impact panel up — deliver the pilot ask, hold, stop.
-8. **(Optional) Theme:** sun/moon button top-right toggles light/dark — record in **light** for a clean exec look.
+1. **Open** on **Fleet Command** — don't interact during the 0:00 problem framing; the ride map is the backdrop.
+2. **Fleet Command:** map (routes from home bases) → KPI strip (score 63, 216 high-risk) → insurance impact (S$873k static → S$668k behaviour = **S$204k/yr** saved) → **'Show how this is calculated'** → coaching upside **S$63k/yr**.
+3. **Leaderboard → worst driver → Driver Detail (Marcus, Bukit Batok):** trip map → factor breakdown → **Claims (red 'Risk confirmed', 2 at-fault → hard braking + harsh cornering)**.
+4. **Persona switch → Sarah:** dashboard re-rates live (score 86, safe).
+5. **Insurer View:** 'Across the whole fleet' → counters (**191** overcharged-safe · **117** underpriced-risky) → **click 'Risky but underpriced'** → driver list → **click a driver** → it loads into 'Selected vehicle' beside the map → KPI strip (claims-cost ratio 75.8→72.0%, retained +6.2pp).
+6. **Rating Lab:** drag **night-driving** to extreme → let AI name it → drag **hard-braking** → let AI re-name it.
+7. **Business case + architecture:** narrate on the impact panel / KPIs.
+8. **Close:** impact panel up — deliver the pilot ask, hold, stop. **Record in light theme.**
 
 ## Numbers cheat sheet (verified live — should match screen)
-- **Sarah (D0001):** DriveScore **86**, Platinum, NCD 50%. Dominant factor: **mileage** (a safe, high-mileage commuter — nothing else flagged). ~**S$35/mo** (~**S$420/yr**) below the static table. Claims: **0**, **5 claim-free years** → green "Low risk confirmed."
-- **Marcus (D0002):** DriveScore **30**, surcharge vs static. Dominant factor: **hard braking** (aggressive city driver). Claims: **2 at-fault** (rear-end → hard braking; intersection → harsh cornering) → red "Risk confirmed by claims."
-- **Priya (D0003):** DriveScore **67**, moderate · mildly overpaying. Dominant factor: **average speed** (fast highway commuter). Claims: **1 not-at-fault** (windscreen) → neutral "Consistent with DriveScore."
-- **Fresh applicant (rating engine):** push **night-driving** to the rail → score drops, premium re-rates up, AI names night driving (it carries the heaviest weight, so it dominates when maxed); then drag **hard-braking** up → AI re-names it. Demonstrates the engine + AI on a separate applicant.
-- **Three distinct stories:** Sarah = safe/overcharged (mileage) · Priya = average/overpaying (speed) · Marcus = risky/underpriced (hard braking). No two personas share a top factor.
-- **Book (50k modelled):** **191** overcharged-safe · **117** underpriced-risky · loss ratio **75.8% → 72.0%** (−3.8pp, computed from adverse selection) · retention **+6.2pp** · **~S$3.5M/yr** loss leakage recovered.
+- **Fleet (Ninja Logistics, insured by Etiqa):** **600** vehicles · avg DriveScore **63** · **216** high-risk (>⅓) · annual premium **S$668,544** behaviour-based vs **S$872,724** old flat rate = **S$204,180/yr saved** · coaching upside **S$62,636/yr**.
+- **Marcus (D0002):** DriveScore **30**, home base **Bukit Batok**, top factor hard braking · Claims **2 at-fault** (rear-end → hard braking; intersection → harsh cornering) → red "Risk confirmed by claims."
+- **Sarah (D0001):** DriveScore **86**, safe tier · Claims **0** → green "Low risk confirmed."
+- **Priya (D0003):** DriveScore **67**, moderate · top factor average speed.
+- **Insurer View (book modelled to 50k):** **191** safe-but-overcharged · **117** risky-but-underpriced · claims-cost ratio **75.8% → 72.0%** (−3.8pp) · drivers retained **+6.2pp**.
+- **Rating Lab (single vehicle what-if):** push **night driving** to the rail → score drops, premium re-rates up, AI names night driving; drag **hard braking** up → AI re-names it.
 
 ## Delivery notes — this is a pitch, perform it like one
-- **Talk to the CEO, not the screen.** Every metric ties back to *their* money: churn, loss ratio, combined ratio, the competitor.
-- **Stakes early, ask late.** Open on the cost of inaction; close on a concrete pilot, not "thanks for watching."
-- **Confidence on the "break it" beat** — you *want* them to doubt it, then you prove it. That moment sells the whole thing.
-- Architecture is reassurance ("low-risk, fast, defensible"), not a tech lecture. Keep it short.
-- If Bedrock lags on the day, the grounded cached explanation streams instead — never stalls; don't mention unless asked.
-- Hard cap **10:00**; aim for **~8:15** to keep buffer. Rehearse the **first and last 30 seconds** until they're automatic.
+- **Address both people.** Say "to the fleet…" / "to the insurer…" out loud so the two-audience structure is unmistakable. Every metric ties to *their* money.
+- **The map is the opener.** Don't narrate features — let the fleet-wide ride map land first; it's the "this is real, and it's *your* fleet" moment.
+- **Stakes early, ask late.** Open on the shared cost of inaction; close on a concrete joint pilot.
+- **Confidence on the "break it" beat** — invite the doubt, then prove it. That moment sells the engine.
+- Architecture is reassurance ("low-risk, fast, defensible"), not a tech lecture — keep it short.
+- If the live AI lags on the day, the grounded fallback streams instead — never stalls; don't mention unless asked.
+- Hard cap **10:00**; aim for **~9:00**. Rehearse the **first and last 30 seconds** until automatic.

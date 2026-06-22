@@ -318,3 +318,71 @@ def portfolio_summary(rows: list[dict]) -> dict:
         "loss_ratio_before": lr_before,
         "loss_ratio_after": lr_after,
     }
+
+
+# ---------------------------------------------------------------------------
+# Fleet view: the operator's own vehicles (the sample book IS the fleet).
+# ---------------------------------------------------------------------------
+def _coached_multiplier(risk: float) -> float:
+    """Multiplier if a driver is coached down to the safe/moderate boundary.
+
+    Drivers already at/below the 0.5 risk midpoint are unchanged; riskier drivers
+    are modelled as reaching the midpoint (multiplier 1.0) after coaching. This is
+    the upper bound on premium savings the CEO can unlock by improving the tail.
+    """
+    return max(MULT_MIN, min(MULT_MAX, 1 + PRICING_K * (min(risk, 0.5) - 0.5)))
+
+
+def fleet_summary(rows: list[dict], drivers: list[dict]) -> dict:
+    """Fleet-operator KPIs for the Fleet CEO command view.
+
+    The fleet is the concrete set of vehicles in the book (not a modelled 50k
+    portfolio — that framing belongs to the insurer). Every figure is summed
+    straight from the engine's per-vehicle output, plus a coaching projection that
+    re-prices the high-risk tail as if it reached a safe-driving baseline.
+    """
+    n = max(1, len(rows))
+    by_id = {r["id"]: r for r in rows}
+
+    avg_score = round(sum(r["drivescore"] for r in rows) / n)
+    safe = sum(1 for r in rows if r["band"] == "safe")
+    moderate = sum(1 for r in rows if r["band"] == "moderate")
+    high_risk = sum(1 for r in rows if r["band"] == "high-risk")
+
+    # Actual annualised premium for the fleet under behaviour-based pricing.
+    annual_premium = round(sum(r["dynamic_premium"] * 12 for r in rows))
+    # What the legacy static commercial-motor table would bill the same fleet.
+    annual_premium_static = round(sum(r["static_premium"] * 12 for r in rows))
+
+    # Coaching upside: re-price the high-risk tail at a coached baseline.
+    coached_total = 0.0
+    for d in drivers:
+        r = by_id.get(d["id"])
+        if r is None:
+            continue
+        if r["band"] == "high-risk":
+            risk = compute_risk(d["telematics"])
+            base = SEGMENT_BASE.get(d.get("vehicle_class", "sedan"), SEGMENT_BASE["sedan"])
+            coached_total += base * _coached_multiplier(risk) * 12
+        else:
+            coached_total += r["dynamic_premium"] * 12
+    annual_premium_coached = round(coached_total)
+    coaching_savings = annual_premium - annual_premium_coached
+
+    # Total safety events surfaced across recent trips (map + ops signal).
+    return {
+        "operator": "Ninja Logistics",
+        "insurer": "Etiqa",
+        "total_vehicles": len(rows),
+        "active_drivers": len(rows),
+        "avg_score": avg_score,
+        "safe": safe,
+        "moderate": moderate,
+        "high_risk": high_risk,
+        "at_risk": high_risk,
+        "annual_premium": annual_premium,
+        "annual_premium_static": annual_premium_static,
+        "annual_premium_coached": annual_premium_coached,
+        "coaching_savings": coaching_savings,
+        "vs_static_savings": annual_premium_static - annual_premium,
+    }

@@ -1,104 +1,125 @@
-# DriveScore — Dynamic Motor Insurance Intelligence
+# DriveScore — Fleet Risk & Insurance Platform
 
 ## One-line pitch
-DriveScore turns the telematics already sitting unused in a motor insurer's data lake into live, explainable, behavior-based premiums — so safe drivers stop overpaying and risky drivers stop being a hidden loss.
+DriveScore turns the telematics a vehicle **fleet** already streams into live, explainable,
+behaviour-based risk scores and commercial-motor premiums — so the **fleet operator** can see where its
+risk is, coach it down, and cut its insurance bill, while the **insurer** prices real behaviour instead
+of a blunt table.
 
-## The customer problem (from the brief)
-A regional motor insurer prices premiums with **static risk tables** (age, postcode, vehicle type). Every driver in a bracket pays the same regardless of how they actually drive. The insurer **collects telematics** — speed, hard-braking, time of day, route, mileage, harsh cornering — but it **sits unused in a data lake**. The result is two simultaneous failures:
+## Two stakeholders (who it's for and how it helps each)
+- **Fleet operator CEO** — synthetic **"Ninja Logistics"** (Ninja Van's parent entity; standing in for
+  Singapore last-mile / ride-hail operators like ComfortDelgro, Grab, Ninja Van). Runs ~600 vehicles.
+  Wants safer drivers and a lower insurance bill.
+- **Insurer owner** — **"Etiqa"**, underwrites the fleet's commercial motor cover. Wants to price the
+  fleet on real risk, keeping the safe operators and correctly pricing the dangerous ones.
 
-- **Safe drivers are overcharged** → they feel it, shop around, and churn.
-- **Risky drivers are underpriced** → they generate claims and losses.
+> Company names are illustrative for the demo; **all data is synthetic** — no real Ninja Van or Etiqa
+> data. Money is **SGD, annualised**.
 
-The insurer cannot surface risk from driving data *before* it turns into claims. The challenge: use telematics to calculate dynamic premiums, surface risk patterns, and give drivers visibility into how their habits affect price.
+## The customer problem
+A large fleet's insurance is priced off a **static commercial-motor table** (vehicle class, etc.) — it
+can't tell the safest driver from the most dangerous, so good drivers subsidise bad ones and the
+operator has no lever to lower the bill. From the insurer's side, the fleet is priced as one averaged
+risk: **safe operators are overcharged → they leave; risky ones are underpriced → they become claims.**
+Every vehicle already streams speed, hard-braking, time of day, mileage, harsh cornering — and it sits
+**unused in a data lake.** This is an activation problem, not a data problem.
 
-## Presentation framing — a real SG motor product
-The prototype is dressed as **"Meridian Motor · DriveScore"**, a Singapore comprehensive
-motor product. All money is **SGD, annualised**; the UI carries real insurance chrome —
-policy number, comprehensive cover, **No-Claims Discount (NCD, 0–50% SG scale)**, excess,
-cover dates, vehicle/plate, and **claims history**. A **light/dark theme** (default light)
-and a **persona switcher** support the walkthrough. This chrome is a frontend presentation
-layer over the engine's real numbers; nothing displayed is faked.
+## The concept — four views, two audiences, one story
 
-## The concept — three connected views, one story
-DriveScore is a single web app with three views that tell one narrative end to end.
+### 1. Fleet Command (Fleet CEO — default)
+The operator's home screen.
+- **Fleet ride map (hero)** — a live Singapore map of recent trips across the fleet; routes coloured by
+  safety, safety events plotted, and each driver's **home base** marked (drivers take vehicles home, so
+  every trip starts/ends there — the drive home is a fleet ride too).
+- **KPI strip** — vehicles, fleet safety score, at-risk drivers, annual premium, **saved vs old flat
+  rate**.
+- **Driver safety leaderboard** — worst/safest toggle; click a driver → Driver Detail.
+- **Insurance impact** — old flat-rate bill vs behaviour-based vs coached, with a **"show how this is
+  calculated"** drill-down (the saving, vehicle by vehicle).
 
-### 1. Driver Dashboard (customer view)
-What a real policyholder would see in their insurer app.
-- **Persona switcher** — flip between the three demo customers (Sarah / Marcus / Priya); the dashboard re-rates live.
-- **DriveScore 0–100** (headline gauge) + program **tier** (Platinum / Silver / Watch).
-- **Policy card** — policy no., comprehensive cover, NCD %, excess, cover period, vehicle + plate.
-- **Premium build-up** (annual SGD): base premium ± DriveScore behaviour adjustment − NCD = annual premium payable, shown against the standard rate-table price (the before/after delta).
-- **Recent-trips feed** — each trip scored, with hard-brake / night / speeding events flagged.
-- **Claims history** — system-of-record panel that **validates the DriveScore** (see below).
-- **AI-generated coaching**, streamed live, grounded in the real factor contributions.
+### 2. Driver Detail (drill-down)
+One driver/vehicle: their **trips on a map** (home base shown), DriveScore + tier, factor breakdown,
+premium build-up (SGD, NCD), **claims history** (the validation beat, below), and live AI coaching.
 
-### 2. Live Rating Engine (the proof)
-The interactive proof that this is a real backend, not a mockup. Framed as an underwriter's
-indicative-quote workbench.
-- Five telematics **sliders**: avg speed, hard-braking / 100km, night-driving %, monthly mileage, harsh cornering / 100km.
-- Drag any slider → **DriveScore and premium re-rate in real time** via the backend.
-- Output shown as an **indicative SGD quote** with the full rating build-up and tier.
-- The factor breakdown updates live and the AI rationale re-streams, naming the dominant factor.
+### 3. Insurer View (Insurer owner)
+The underwriting console, split for clarity:
+- **Across the whole fleet** — two **clickable** mispriced counters (*safe but overcharged* / *risky
+  but underpriced*) that open the actual driver lists; plus loss ratio (computed before/after) and
+  retention. These totals don't change when you select a vehicle.
+- **Inspect one vehicle** — the risk-vs-price map beside the **selected vehicle's** pricing (old rate vs
+  DriveScore, over/under amount, claims), with a drill into Driver Detail.
 
-### 3. Underwriter Console (business view)
-What the insurer's pricing team would see across the whole book.
-- **Actuarial KPI strip**: Gross Written Premium, **loss ratio (computed before/after)**, retention rate, average DriveScore.
-- **Mispricing map**: every driver plotted as risk (DriveScore) vs. current price.
-  - **Overcharged-safe** (top-left): low risk, high price → churn risk.
-  - **Underpriced-risky** (bottom-right): high risk, low price → loss leakage.
-- **Repricing-impact panel**: apply DriveScore pricing across the book → projected **retention up**, **annual loss leakage recovered**.
-- **Inspect panel**: click any policy to see its rating **and its claims history**.
+### 4. Rating Lab (shared — the proof)
+Five telematics sliders on a single vehicle → **DriveScore and premium re-rate live** on the backend,
+factor bars re-rank, and the AI rationale re-streams naming the dominant factor. The "is it real?" beat.
 
 ## Claims history — the validation beat
-Claims are the insurer's ground truth, so the prototype uses them to **prove the DriveScore is right**, not just plausible:
-- **Sarah (safe, 91):** 0 claims, 5 claim-free years → green **"Low risk confirmed"** — proving she's genuinely low-risk and currently overcharged.
-- **Marcus (risky, 30):** 2 **at-fault** claims, each linked back to the exact factor the model flagged (rear-end → hard braking; night single-vehicle → night driving) → red **"Risk confirmed by claims"** — proving the static table underpriced a real loss-maker.
-- **Priya (avg, 64):** 1 not-at-fault claim → neutral "Consistent with DriveScore."
+Claims are ground truth, so the prototype uses them to **prove the DriveScore is right**, not just
+plausible:
+- **Sarah (safe, 86):** 0 claims → green **"Low risk confirmed"** — genuinely low-risk, currently
+  overcharged by the flat rate.
+- **Marcus (risky, 30, home base Bukit Batok):** 2 **at-fault** claims, each linked to the exact factor
+  the model flagged (rear-end → hard braking; intersection → harsh cornering) → red **"Risk confirmed
+  by claims."**
+- **Priya (avg, 67):** 1 not-at-fault claim → neutral "Matches the DriveScore."
 
-The pitch line this enables: *"The model didn't guess — your own claims history confirms it called the risk."*
+The line this enables: *"The model didn't guess — your own claims confirm it called the risk."*
 
-## The hero demo moment — what a 5 looks like
-A skeptic in the room grabs the **night-driving slider** and drags it to an extreme.
-- The **premium re-rates live** (real backend recompute, not a canned number).
-- The **streaming AI explanation correctly names night-driving as the dominant factor** — unscripted, because it's reading the actual factor contributions the engine just produced.
-- Switching to **Marcus** shows the dashboard re-rate to a surcharge, and his **claims confirm the model** — the "loss leakage with a name and a face" moment.
+## The hero demo moments
+1. **Fleet Command map** — "here's where your 600 vehicles actually drove this week," routes coloured by
+   safety, home bases marked. The "this is real, and it's *your* fleet" moment.
+2. **Insurance impact** — old flat rate **S$872,724/yr** → behaviour-based **S$668,544/yr** = **S$204,180
+   saved**, with the calculation shown; +**S$62,636/yr** more by coaching the high-risk tail.
+3. **Insurer counters → list** — click *risky but underpriced* → the actual vehicles → select one → its
+   pricing beside the map.
+4. **Rating Lab break-it** — drag night-driving to the extreme; price re-rates and the AI names night
+   driving unscripted; drag hard-braking → it re-names it.
 
-"5 out of 5" = *I'd put this in front of a customer CEO tomorrow, unedited.* The skeptic tries to break it by feeding extreme inputs; the score, the explanation, the claims corroboration, and the portfolio view all stay coherent and correct.
+"5 out of 5" = *I'd put this in front of a customer CEO tomorrow, unedited.*
 
 ## The "real backend" proof
-The load-bearing proof is the **slider → recompute** round trip: changing an input changes the output, computed server-side by a transparent **weighted-rules risk engine**. The engine is explainable by design — it returns the per-factor contribution to the score, so the UI can show *why* the score moved. Explainability is the feature, not a footnote. (Optionally backed by a small scikit-learn model trained on the synthetic data, but the rules engine is the source of truth for the demo so every number is defensible on camera.)
-
-Dynamic pricing = **base rate × risk multiplier**, always shown as a **delta vs. the static-table baseline** so the before/after value is on screen.
+The load-bearing proof is the **slider → recompute** round trip and the **/fleet/summary** &
+**/portfolio** aggregates — changing an input changes the output, computed server-side by a transparent
+**weighted-rules risk engine** that returns per-factor contributions (explainability is the feature).
+Dynamic pricing = **base rate × risk multiplier**, always shown as a **delta vs the old flat-rate
+baseline**. The fleet ride map is built from a deterministic geo engine grounded in each driver's real
+telematics, so the map and the score always tell one story.
 
 ## Demo narrative
-> "Meet Sarah. She's a careful driver — low speed, almost no hard-braking, barely drives at night. Today her insurer charges her ~S$420/year more than her driving deserves, because pricing is based on a static table. Sarah is exactly the customer who churns. Now meet Marcus: aggressive, lots of night driving — and he's *underpriced*. He's a loss waiting to happen, and his claims already prove it. The insurer has the telematics to see both of these problems. It just isn't using it. Here's how we fix both — live."
+> "Two of you are here — the fleet CEO and the insurer — because you're on opposite sides of the same
+> broken deal. Here's where your 600 vehicles actually drive. A third of your drivers are high-risk and
+> you can't see them until they crash. Priced on real behaviour, your bill drops S$204k a year today —
+> and another S$63k if you coach the worst. For the insurer: 191 vehicles overcharged, 117 underpriced,
+> and your loss ratio moves four points the right way. Watch us prove it — live."
 
-Then: open Sarah's dashboard (overcharged ~S$420/yr, claims confirm low risk) → switch to Marcus and show his claims confirming the model → in the Live Rating Engine, drag the night-driving slider and watch the price correct itself with a live AI explanation → flip to the Underwriter Console and show the mispricing map + computed loss-ratio improvement → close on the repricing-impact numbers (retention up, loss leakage recovered).
-
-> **The full CEO pitch script lives in `DEMO_SCRIPT.md`** — this section is the concept summary.
+The full two-audience CEO pitch lives in **`DEMO_SCRIPT.md`**; this is the concept summary.
 
 ## Feature → scored-criteria map
 
 | Feature | Scored criterion it proves | Demo-path? | Bar |
 |---|---|---|---|
-| Slider → `/score` + `/price` live recompute | 1. Working prototype w/ real backend | **Demo-path** | Must be a 5 — this is the "it's real" proof |
-| Weighted-rules engine returns per-factor contributions | 1. Real processing; 2. Tech integration | **Demo-path** | Must be a 5 |
-| `/explain` → Bedrock Claude streaming coaching + why-price-changed | 2. Tech integration (AI+cloud+data); 3. UI polish | **Demo-path** | Must be a 5; cached fallback required |
-| Driver Dashboard (DriveScore, premium gauge, top-3, coaching) | 3. UI/UX polish; 4. Business impact | **Demo-path** | Must be a 5 |
-| Underwriter Console scatter + two-failure-mode quadrants | 4. Business impact clarity | **Demo-path** | Must be a 5 |
-| Repricing-impact panel (retention↑, losses↓) | 4. Business impact (before/after on screen) | **Demo-path** | Must be a 5 |
-| Delta-vs-static-baseline shown on every premium | 4. Business impact clarity | **Demo-path** | Must be a 5 |
-| Self-explanatory 10-min narrative arc (Sarah → fix → portfolio → impact) | 5. Executive presence | **Demo-path** | Must be a 5 |
-| `/portfolio` endpoint serving 500–1000 synthetic drivers | 1. Real backend; 2. Data | **Demo-path** | 5 (drives the console) |
-| CDK one-command deploy + clone-to-run README | 1. Working prototype (clone-to-run) | **Demo-path** | Must be a 5 |
-| Optional scikit-learn model behind the rules engine | 2. Tech integration (bonus) | Off-path | Rough edges OK; skip if behind |
-| Driver search / filter / pagination in console | — | Off-path | Rough edges OK |
-| Auth, multi-user, settings, account screens | — (anti-criteria) | Off-path | Do NOT build |
-| Editing driver records, persistence of changes | — | Off-path | Not needed; in-memory is fine |
-| Error handling for malformed/extreme inputs *off* the demo path | — (anti-criteria) | Off-path | Clamp gracefully; don't gold-plate |
+| Slider → `/score` + `/price` live recompute (Rating Lab) | 1. Working backend | **Demo-path** | 5 — the "it's real" proof |
+| Weighted-rules engine returns per-factor contributions | 1. Real processing; 2. Tech integration | **Demo-path** | 5 |
+| **Fleet ride map** (`/fleet/trips`, Leaflet, home bases) | 2. Tech integration; 3. UI polish; 4. Impact | **Demo-path** | 5 — the hero upgrade |
+| `/fleet/summary` KPIs + insurance impact + calc drill-down | 1. Backend; 4. Business impact | **Demo-path** | 5 |
+| `/explain` → live LLM streaming coaching, grounded | 2. Tech integration; 3. UI polish | **Demo-path** | 5; template/cache fallback |
+| Driver Detail (score, trips map, factors, claims, coaching) | 3. UI/UX polish; 4. Impact | **Demo-path** | 5 |
+| Insurer View — whole-fleet vs selected + clickable counters→list | 4. Business impact clarity | **Demo-path** | 5 |
+| Loss ratio computed before/after (adverse selection) | 1. Real backend; 4. Impact | **Demo-path** | 5 |
+| Two-audience narrative arc (Fleet CEO → Insurer → prove it) | 5. Executive presence | **Demo-path** | 5 |
+| `/portfolio` over 600 synthetic drivers | 1. Real backend; 2. Data | **Demo-path** | 5 (drives the console) |
+| Responsive (mobile nav, fluid type, responsive map/chart) | 3. UI/UX polish | **Demo-path** | 5 |
+| CDK one-command deploy + clone-to-run README | 1. Clone-to-run | **Demo-path** | 5 |
+| Optional scikit-learn model behind the rules engine | 2. Tech integration (bonus) | Off-path | Rough edges OK |
+| Auth, multi-user, persistence, account screens | — (anti-criteria) | Off-path | Do NOT build |
 
-## Explicit non-goals (anti-criteria — never spend effort here)
-Production-grade code, tests, CI/CD, multi-env, monitoring/logging infra, comprehensive edge-case handling, a "finished product," docs beyond the four deliverables. Synthetic data only — no real customer data, no secrets in the repo.
+## Explicit non-goals (anti-criteria)
+Production-grade code, tests, CI/CD, multi-env, monitoring infra, exhaustive edge-case handling, a
+"finished product," docs beyond the four deliverables. Synthetic data only — no real customer data, no
+secrets in the repo.
 
 ## Top risk + mitigation
-**Risk:** the DriveScore feels arbitrary ("why 72?"). **Mitigation:** explainability is built into the engine — every score ships with its per-factor contributions, the UI shows them, and the AI explanation reads from them. A skeptic can interrogate any number and get a consistent answer. Overall build risk is **LOW**: the core is a deterministic weighted formula plus a streaming LLM call over bundled JSON.
+**Risk:** the DriveScore feels arbitrary ("why 30?"). **Mitigation:** explainability is built into the
+engine — every score ships with its per-factor contributions, the UI shows them, the AI reads from them,
+and the fleet map + claims corroborate them. Overall build risk **LOW**: a deterministic weighted
+formula + a geo engine + a streaming LLM over bundled JSON.

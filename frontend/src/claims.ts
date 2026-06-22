@@ -144,20 +144,20 @@ export function claimsFor(id: string, drivescore: number): ClaimsRecord {
       kind: "risk_confirmed",
       headline: "Risk confirmed by claims",
       detail:
-        "DriveScore flagged elevated risk from driving behaviour — and the claims record bears it out. Static pricing missed this.",
+        "DriveScore flagged this driver as higher-risk from how they drive — and the claims back it up. The old flat rate missed this.",
     };
   } else if (claims.length === 0 && drivescore >= 80) {
     validation = {
       kind: "low_risk_confirmed",
       headline: "Low risk confirmed",
       detail:
-        "A high DriveScore and a clean claims record agree: a genuinely low-risk driver — currently overcharged by the static table.",
+        "A high DriveScore and a clean claims record agree: a genuinely safe driver — currently overcharged by the old flat rate.",
     };
   } else {
     validation = {
       kind: "mixed",
-      headline: "Consistent with DriveScore",
-      detail: "Claims experience is in line with this driver's behaviour-based risk.",
+      headline: "Matches the DriveScore",
+      detail: "Claims experience lines up with how this driver actually drives.",
     };
   }
 

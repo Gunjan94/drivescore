@@ -46,8 +46,9 @@ export function QuadrantScatter({
   }));
 
   return (
-    <ResponsiveContainer width="100%" height={460}>
-      <ScatterChart margin={{ top: 16, right: 24, bottom: 40, left: 16 }}>
+    <div className="w-full h-[340px] sm:h-[420px] lg:h-[460px]">
+      <ResponsiveContainer width="100%" height="100%">
+        <ScatterChart margin={{ top: 16, right: 16, bottom: 40, left: 8 }}>
         <CartesianGrid stroke={theme.color.line} strokeDasharray="3 3" />
         <XAxis
           type="number"
@@ -89,5 +90,6 @@ export function QuadrantScatter({
         </Scatter>
       </ScatterChart>
     </ResponsiveContainer>
+    </div>
   );
 }

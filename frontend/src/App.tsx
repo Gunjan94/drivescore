@@ -1,71 +1,61 @@
 import { useState } from "react";
+import { FleetCommand } from "./views/FleetCommand";
 import { DriverDashboard } from "./views/DriverDashboard";
 import { PricingEngine } from "./views/PricingEngine";
 import { UnderwriterConsole } from "./views/UnderwriterConsole";
+import { OPERATOR, INSURER } from "./fleet";
 import { theme, getMode, toggleMode, type Mode } from "./theme";
 
-type View = "dashboard" | "pricing" | "console";
+type View = "fleet" | "driver" | "insurer" | "lab";
 
-const TABS: { id: View; label: string }[] = [
-  { id: "dashboard", label: "Driver Dashboard" },
-  { id: "pricing", label: "Live Pricing Engine" },
-  { id: "console", label: "Underwriter Console" },
+const TABS: { id: View; label: string; audience: "operator" | "insurer" | "shared" }[] = [
+  { id: "fleet", label: "Fleet Command", audience: "operator" },
+  { id: "driver", label: "Driver Detail", audience: "operator" },
+  { id: "insurer", label: "Insurer View", audience: "insurer" },
+  { id: "lab", label: "Rating Lab", audience: "shared" },
 ];
 
 export default function App() {
-  const [view, setView] = useState<View>("dashboard");
+  const [view, setView] = useState<View>("fleet");
+  const [driverId, setDriverId] = useState("D0001");
   const [mode, setMode] = useState<Mode>(getMode());
+
+  function openDriver(id: string) {
+    setDriverId(id);
+    setView("driver");
+  }
 
   return (
     <div className="min-h-screen">
       <header
-        className="sticky top-0 z-10 backdrop-blur"
+        className="sticky top-0 z-[1000] backdrop-blur"
         style={{ borderBottom: `1px solid ${theme.color.line}`, background: "var(--header-bg)" }}
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4 flex-wrap">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
-              style={{ background: theme.color.accent, color: theme.color.ink, boxShadow: "var(--card-shadow)" }}
-            >
-              <GaugeMark />
-            </div>
-            <div>
-              <div className="font-bold text-xl leading-none tracking-tight">
-                Drive<span style={{ color: theme.color.accent2 }}>Score</span>
-                <span className="text-muted font-medium text-base">  ·  Meridian Motor</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+          {/* Brand row */}
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3 min-w-0">
+              <div
+                className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center shrink-0"
+                style={{ background: theme.color.accent, color: theme.color.ink, boxShadow: "var(--card-shadow)" }}
+              >
+                <GaugeMark />
               </div>
-              <div className="text-muted text-xs mt-1 tracking-wide">
-                Usage-based motor insurance · Singapore
+              <div className="min-w-0">
+                <div className="font-bold text-lg sm:text-xl leading-none tracking-tight truncate">
+                  Drive<span style={{ color: theme.color.accent2 }}>Score</span>
+                  <span className="text-muted font-medium text-sm sm:text-base hidden sm:inline"> · Fleet Risk</span>
+                </div>
+                <div className="text-muted text-[11px] sm:text-xs mt-1 tracking-wide truncate">
+                  {OPERATOR} <span className="opacity-60">insured by</span> {INSURER}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <nav className="flex gap-2">
-              {TABS.map((t) => {
-                const active = view === t.id;
-                return (
-                  <button
-                    key={t.id}
-                    onClick={() => setView(t.id)}
-                    className="px-4 py-3 rounded-xl font-medium transition-colors"
-                    style={{
-                      minHeight: theme.touch.minTarget,
-                      background: active ? theme.color.accent : "transparent",
-                      color: active ? theme.color.ink : theme.color.muted,
-                      border: `1px solid ${active ? theme.color.accent : theme.color.line}`,
-                    }}
-                  >
-                    {t.label}
-                  </button>
-                );
-              })}
-            </nav>
             <button
               onClick={() => setMode(toggleMode())}
               aria-label={`Switch to ${mode === "dark" ? "light" : "dark"} theme`}
               title={`Switch to ${mode === "dark" ? "light" : "dark"} theme`}
-              className="rounded-xl flex items-center justify-center transition-colors"
+              className="rounded-xl flex items-center justify-center transition-colors shrink-0"
               style={{
                 minHeight: theme.touch.minTarget,
                 minWidth: theme.touch.minTarget,
@@ -77,20 +67,42 @@ export default function App() {
               {mode === "dark" ? <SunIcon /> : <MoonIcon />}
             </button>
           </div>
+
+          {/* Tab nav — horizontally scrollable on mobile */}
+          <nav className="mt-3 flex gap-2 overflow-x-auto pb-1 -mx-4 px-4 sm:mx-0 sm:px-0 no-scrollbar">
+            {TABS.map((t) => {
+              const active = view === t.id;
+              return (
+                <button
+                  key={t.id}
+                  onClick={() => setView(t.id)}
+                  className="px-3 sm:px-4 py-2.5 rounded-xl font-medium transition-colors whitespace-nowrap text-sm sm:text-base shrink-0"
+                  style={{
+                    minHeight: theme.touch.minTarget,
+                    background: active ? theme.color.accent : "transparent",
+                    color: active ? theme.color.ink : theme.color.muted,
+                    border: `1px solid ${active ? theme.color.accent : theme.color.line}`,
+                  }}
+                >
+                  {t.label}
+                </button>
+              );
+            })}
+          </nav>
         </div>
       </header>
 
       <main>
-        {view === "dashboard" && <DriverDashboard />}
-        {view === "pricing" && <PricingEngine />}
-        {view === "console" && <UnderwriterConsole />}
+        {view === "fleet" && <FleetCommand onOpenDriver={openDriver} />}
+        {view === "driver" && <DriverDashboard driverId={driverId} onDriverChange={setDriverId} />}
+        {view === "insurer" && <UnderwriterConsole onOpenDriver={openDriver} />}
+        {view === "lab" && <PricingEngine />}
       </main>
     </div>
   );
 }
 
 function GaugeMark() {
-  // Speedometer mark — on-brand for a usage-based "DriveScore" product.
   return (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
       strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>

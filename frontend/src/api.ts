@@ -105,6 +105,82 @@ export async function getDriver(id: string): Promise<DriverRow> {
   return res.json();
 }
 
+// ---------------------------------------------------------------------------
+// Fleet + trip-map data (B2B fleet reframe)
+// ---------------------------------------------------------------------------
+export type TripEventType = "hard_brake" | "harsh_corner" | "speeding" | "night";
+
+export interface TripEvent {
+  type: TripEventType;
+  label: string;
+  lat: number;
+  lng: number;
+}
+
+export interface Trip {
+  id: string;
+  driver_id: string;
+  driver_name: string;
+  day: string;
+  date: string;
+  time: string;
+  from_: string;
+  to: string;
+  km: number;
+  score: number;
+  night: boolean;
+  route: [number, number][];
+  events: TripEvent[];
+}
+
+export interface FleetSummary {
+  operator: string;
+  insurer: string;
+  total_vehicles: number;
+  active_drivers: number;
+  avg_score: number;
+  safe: number;
+  moderate: number;
+  high_risk: number;
+  at_risk: number;
+  annual_premium: number;
+  annual_premium_static: number;
+  annual_premium_coached: number;
+  coaching_savings: number;
+  vs_static_savings: number;
+}
+
+export interface FleetBase {
+  name: string;
+  lat: number;
+  lng: number;
+}
+
+export interface FleetTrips {
+  trips: Trip[];
+  center: [number, number];
+  count: number;
+  bases?: FleetBase[];
+}
+
+export async function getFleetSummary(): Promise<FleetSummary> {
+  const res = await fetch(`${API}/fleet/summary`);
+  if (!res.ok) throw new Error(`/fleet/summary ${res.status}`);
+  return res.json();
+}
+
+export async function getFleetTrips(limit = 52): Promise<FleetTrips> {
+  const res = await fetch(`${API}/fleet/trips?limit=${limit}`);
+  if (!res.ok) throw new Error(`/fleet/trips ${res.status}`);
+  return res.json();
+}
+
+export async function getDriverTrips(id: string, count = 6): Promise<FleetTrips> {
+  const res = await fetch(`${API}/driver/${id}/trips?count=${count}`);
+  if (!res.ok) throw new Error(`/driver/${id}/trips ${res.status}`);
+  return res.json();
+}
+
 export interface ExplainPayload {
   drivescore: number;
   factors: Factor[];

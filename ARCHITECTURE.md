@@ -1,55 +1,101 @@
 # DriveScore — Architecture Overview
 
+**Fleet risk & insurance platform.** Synthetic operator **Ninja Logistics** (Singapore last-mile fleet,
+~600 vehicles), insured by **Etiqa**. Two audiences: the **Fleet CEO** (safer drivers + lower premium)
+and the **Insurer owner** (price real risk). The scoring/pricing engine is the source of truth; the
+fleet framing, map, and policy chrome are presentation over its real numbers.
+
 ## Diagram
 ```
-┌──────────────────────────────────────────────────────────────────────┐
-│  BROWSER  (React 18 + TypeScript + Vite, Tailwind, Recharts)           │
-│  ┌────────────────┐  ┌─────────────────────┐  ┌────────────────────┐  │
-│  │ Driver         │  │ Underwriter Console │  │ Live Rating        │  │
-│  │ Dashboard      │  │ (KPI strip: GWP,    │  │ Engine             │  │
-│  │ (persona       │  │  loss ratio, reten- │  │ (5 telematics      │  │
-│  │  switch +      │  │  tion; mispricing   │  │  sliders → SGD     │  │
-│  │  claims)       │  │  map + claims)      │  │  quote build-up)   │  │
-│  └───────┬────────┘  └─────────┬───────────┘  └─────────┬──────────┘  │
-│  Presentation layer (domain.ts SG policy/NCD/SGD · trips.ts · claims.ts │
-│  · theme.ts light/dark) wraps engine numbers — no displayed value faked │
-└──────────┼─────────────────────┼────────────────────────┼─────────────┘
-           │ POST /score /price  │ GET /portfolio          │ POST /explain (SSE stream)
-           ▼                     ▼                          ▼
-┌──────────────────────────────────────────────────────────────────────┐
-│  AWS Lambda  (Python 3.12, response streaming enabled)  — handler.py    │
-│   ┌──────────────────────────────┐   ┌────────────────────────────┐    │
-│   │ engine.py                    │   │ explain.py                 │    │
-│   │  • weighted-rules risk score │   │  • builds prompt from the  │    │
-│   │    (0–100) + per-factor      │   │    factor contributions    │    │
-│   │    contributions             │   │  • streams Claude tokens   │    │
-│   │  • base × multiplier pricing │   │  • cached fallback         │    │
-│   │  • delta vs static baseline  │   └─────────────┬──────────────┘    │
-│   └─────────────┬────────────────┘                 │                    │
-│                 │ reads                              │ converse_stream    │
-│                 ▼                                    ▼                    │
-│        data/drivers.json (600                Amazon Bedrock              │
-│        synthetic drivers, bundled)           Claude Sonnet 4.6           │
-│        data/explain_cache.json               (anthropic.claude-          │
-│        (fallback explanations)                sonnet-4-6)                │
-└──────────────────────────────────────────────────────────────────────┘
-   Region: ap-southeast-1 (Singapore); fallback us-east-1.  Static site → S3.
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  BROWSER  (React 18 + TypeScript + Vite, Tailwind, Recharts, react-leaflet)     │
+│  ┌─────────────┐ ┌─────────────┐ ┌──────────────────┐ ┌──────────────────┐     │
+│  │ Fleet       │ │ Driver      │ │ Insurer View     │ │ Rating Lab       │     │
+│  │ Command     │ │ Detail      │ │ (whole-fleet vs  │ │ (5 telematics    │     │
+│  │ (ride MAP + │ │ (per-driver │ │  selected; risk- │ │  sliders → live  │     │
+│  │  KPIs +     │ │  trip MAP + │ │  vs-price map;   │ │  re-rate + AI    │     │
+│  │  leaderboard│ │  factors +  │ │  mispriced       │ │  rationale)      │     │
+│  │  + S$ saved)│ │  claims +AI)│ │  counters→list)  │ │                  │     │
+│  └──────┬──────┘ └──────┬──────┘ └────────┬─────────┘ └────────┬─────────┘     │
+│   FleetMap (Leaflet + keyless CartoDB/OSM tiles, home-base markers)             │
+│   Presentation layer: fleet.ts (operator/insurer, quadrantOf) · domain.ts (SGD, │
+│   policy/NCD) · trips.ts · claims.ts · theme.ts (light/dark). No value faked.    │
+└──────┬───────────────┬────────────────┬───────────────────────┬────────────────┘
+   /fleet/summary   /fleet/trips      /portfolio            /score /price
+   /driver/{id}     /driver/{id}/trips                      /explain (SSE)
+       │                │                │                       │
+       ▼                ▼                ▼                       ▼
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  AWS Lambda  (Python 3.12, FastAPI via Mangum, Function URL)  — handler.py      │
+│   ┌───────────────┐  ┌───────────────┐  ┌────────────────────┐                  │
+│   │ engine.py     │  │ geo.py        │  │ explain.py + llm.py │                  │
+│   │ • risk score  │  │ • SG routes,  │  │ • prompt grounded   │                  │
+│   │   0–100 +      │  │   home bases  │  │   in factor numbers │                  │
+│   │   per-factor   │  │ • per-driver  │  │ • keyless LLM (def) │                  │
+│   │ • base ×       │  │   trips w/    │  │   → Bedrock (opt)   │                  │
+│   │   multiplier   │  │   geo events  │  │   → template        │                  │
+│   │ • loss ratio   │  │ • fleet_summary  └─────────┬──────────┘                  │
+│   │ • fleet_summary└───────┬───────┘               │                             │
+│   └───────┬───────┘        │ reads                 │                             │
+│           ▼                ▼                        ▼                             │
+│   data/drivers.json (600 synthetic)        text.pollinations.ai (keyless, default)│
+│   data/explain_cache.json (fallback)       OR Amazon Bedrock Claude (USE_BEDROCK=1)│
+└──────────────────────────────────────────────────────────────────────────────┘
+   Region ap-southeast-1.  Frontend → private S3 + CloudFront (OAC, HTTPS).
    Provisioned by AWS CDK (one command). Serverless, ~$0 idle.
 ```
 
-## Data flow (request → Lambda → scoring/pricing → Bedrock explain → UI)
-1. **User drags a slider** in the Live Rating Engine (or opens Sarah's dashboard). The frontend sends the five telematics values to **`POST /score`** and **`POST /price`**.
-2. **Lambda → `engine.py`** normalizes each telematics field to a 0–1 risk via fixed safe/risky breakpoints, applies the named weights (night-driving heaviest), sums to an overall risk, and returns **DriveScore (0–100)** plus the **per-factor contributions** — the points each behavior removed from 100.
-3. For pricing, the engine computes `base_rate × multiplier` (multiplier derived from risk, clamped) and looks up the legacy **static-table premium** from the driver's age/postcode/vehicle. It returns both, and the **delta** — the on-screen before/after.
-4. The UI renders the DriveScore gauge, the premium-vs-baseline delta, and the top-3 factor bars instantly.
-5. On slider release (or dashboard load), the frontend calls **`POST /explain`**. `explain.py` builds a prompt **grounded in the actual factor contributions** and **streams** Claude Sonnet 4.6 from **Amazon Bedrock**; tokens render live. Because the prompt carries the real numbers, the model correctly names the dominant factor — unscripted.
-6. The **Underwriter Console** calls **`/portfolio`**, which scores+prices all 600 synthetic drivers, assigns each to a quadrant (overcharged-safe / underpriced-risky), and returns book-level repricing impact plus a **computed loss ratio before/after**. The loss-ratio model anchors expected losses so the static book sits on its filed target (72%), then applies **adverse selection** (overcharged-safe drivers lapsing at `CHURN=0.30`) to lift the *before* ratio — yielding a defensible ~3.8pp improvement (75.8% → 72.0%), not a hardcoded claim. Recharts plots risk vs. price; the KPI strip and claims read live from this.
-7. **Presentation layer (frontend):** `domain.ts` derives SG policy chrome (policy no., NCD, excess, SGD annualised premium build-up, tiers); `trips.ts` derives a recent-trips feed; `claims.ts` derives claims history + a DriveScore-validation verdict. All are deterministic functions over the engine's output (hero personas hand-authored), so figures stay consistent and traceable. `theme.ts` is the light/dark palette source (CSS vars + a live Proxy token object).
-8. **Degradation:** if Bedrock is slow (>2s to first token) or errors, the matching pre-baked explanation streams from `explain_cache.json`, so the live demo never stalls.
+## The four views, by audience
+- **Fleet operator (CEO):** **Fleet Command** (default) — the live **fleet ride map**, fleet KPIs, a
+  driver safety leaderboard, and the insurance before/after with a "show the calculation" drill-down;
+  and **Driver Detail** — one driver's trips on a map, factor breakdown, claims, AI coaching.
+- **Insurer (owner):** **Insurer View** — clearly split into *Across the whole fleet* (mispriced
+  counters → clickable driver list, loss ratio, retention) and *Inspect one vehicle* (risk-vs-price
+  map + the selected vehicle's pricing).
+- **Shared:** **Rating Lab** — the live what-if slider (the "it's real" proof).
+
+## Data flow
+1. **Fleet Command** loads `GET /fleet/summary` (fleet KPIs from the engine: 600 vehicles, avg score
+   63, band split, annual premium **S$668,544** behaviour-based vs **S$872,724** old flat table =
+   **S$204,180/yr** saved, plus a coaching projection **S$62,636/yr**) and `GET /fleet/trips`, which
+   `geo.py` builds: deterministic Singapore routes anchored to each driver's **home base** (every trip
+   starts/ends home), with safety events geo-located so the map agrees with the score.
+2. **Click a route or a leaderboard row →** `GET /driver/{id}` (score/price) + `GET /driver/{id}/trips`
+   (that driver's home-anchored trips) → **Driver Detail**. `engine.py` normalizes each telematics
+   field to 0–1 risk via fixed breakpoints, applies named weights (night-driving heaviest), and returns
+   **DriveScore (0–100)** + **per-factor contributions**.
+3. **`POST /explain`** streams the coaching/why-the-price text **grounded in the real factor
+   contributions** — keyless public LLM by default (no AWS creds), Amazon Bedrock Claude when
+   `USE_BEDROCK=1`, grounded template if both are unreachable. Because the prompt carries the real
+   numbers, it names the dominant factor unscripted.
+4. **Insurer View** calls **`/portfolio`** (scores+prices all 600 drivers, quadrants each, returns the
+   **computed loss ratio before/after**). The loss-ratio model anchors expected losses so the book sits
+   on its filed target (72%), then applies **adverse selection** (overcharged-safe drivers lapsing at
+   `CHURN=0.30`) to lift the *before* ratio — a defensible **75.8% → 72.0%** (−3.8pp), not a hardcoded
+   claim. `fleet.quadrantOf()` on the frontend uses the same thresholds, so the clickable counters
+   (**191** overcharged-safe · **117** underpriced-risky) match the engine exactly.
+5. **Rating Lab** drags re-call `/score` + `/price` + `/explain` live — backend recompute, not a stored
+   number.
+6. **Degradation:** if the live AI is slow/unreachable, the grounded template/cache streams instead, so
+   the demo never stalls. Map tiles are keyless CDN; routes/markers are vector layers (no marker-asset
+   bundling issues).
 
 ## Why these choices (specific to this scenario)
-- **Serverless Lambda, cheap when idle** — the demo runs for minutes on a Hub touchscreen, not 24/7. Lambda + on-demand Bedrock means **~$0 between demos** and nothing to babysit; exactly the "rough edges off the demo path are fine" posture the brief wants.
-- **Amazon Bedrock over a self-hosted model** — the coaching is short NL grounded in our own numbers; hosting an LLM would burn build days on infra for no demo gain. Bedrock is a managed `converse_stream` call with IAM auth and streaming built in. **Sonnet 4.6** (not Opus) because the explanations are brief and **first-token latency** drives the live "it's real" feel.
-- **Explainable weighted-rules engine over a black-box model** — explainability *is* the feature. A skeptic asks "why 72?" and we show the exact per-factor points. A black-box score would undercut the whole pitch; the deterministic engine also makes every number defensible on camera and makes the AI explanation faithful (it reads the engine's contributions, it doesn't invent them). An optional scikit-learn model can sit behind the rules as a "we can go further" note, but it's never on the critical path.
-- **CDK, one-command deploy** — `cdk deploy` stands up Lambda + Function URL + IAM + the S3 static site, so clone-to-run is genuinely one command and reproducible for judges.
-- **Synthetic, bundled data** — 600 generated drivers with seeded hero cases (Sarah overpaying $35; Marcus underpriced) means every click lands on a compelling, deterministic number, and there's no real customer data or secret in the repo — satisfying the brief's data rules.
+- **Keyless map (Leaflet + CartoDB/OSM tiles), no API token** — the fleet map ("show me where my fleet
+  drives") is the hero upgrade; keyless tiles keep the whole prototype runnable with zero credentials,
+  matching the LLM choice below.
+- **Serverless Lambda + Mangum, cheap when idle** — runs for minutes on a Hub touchscreen; **~$0**
+  between demos. Mangum buffers SSE on Lambda (text appears at once); local dev keeps token streaming.
+- **Keyless LLM by default, Bedrock optional** — the coaching is short NL grounded in our own numbers.
+  A keyless public model means the demo shows genuinely live AI with no AWS setup; `USE_BEDROCK=1`
+  swaps in Amazon Bedrock Claude once model access is enabled. Either way the AI is **fed the engine's
+  real numbers**, so it can never contradict the price.
+- **Explainable weighted-rules engine over a black box** — explainability *is* the feature; a skeptic
+  asks "why 30?" and we show the exact per-factor points. It also keeps every number defensible on
+  camera and the AI explanation faithful.
+- **Two-audience information architecture** — Fleet vs Insurer views, and within the Insurer View a
+  clean *whole-fleet vs selected-vehicle* split, so it's never ambiguous what a number refers to.
+- **CDK one-command deploy** — `cdk deploy` stands up Lambda + Function URL + the S3/CloudFront site;
+  clone-to-run is one command and reproducible.
+- **Synthetic, bundled data** — 600 generated drivers with seeded hero cases (Marcus risky, Sarah safe)
+  means every click lands on a compelling, deterministic number; no real data or secret in the repo.

@@ -1,3 +1,10 @@
+> **Current-state addendum (2026-06-22).** Kept as build history. For the current build see **README.md**,
+> **ARCHITECTURE.md**, **DEMO_SCRIPT.md**. Net change: B2C consumer motor → **B2B fleet** (Ninja Logistics +
+> Etiqa), 4 views, a Leaflet **fleet ride map** with per-driver home bases, `/fleet/*` endpoints, two-audience
+> pitch, responsive pass. **Live:** https://d1kfb74r3kp75u.cloudfront.net.
+
+---
+
 # DriveScore — Build Notes
 
 What was actually built, how to run it, what is real vs mocked, and the

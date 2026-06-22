@@ -11,7 +11,7 @@
 
 import type { DriverMeta, DriverRow, PriceResult, Telematics } from "./api";
 
-export const INSURER = "Meridian Motor"; // synthetic carrier name used in chrome
+export const INSURER = "Etiqa"; // insurer name used in policy chrome (illustrative; synthetic data)
 export const PRODUCT = "DriveScore Telematics Motor";
 
 // ---------------------------------------------------------------------------
@@ -179,7 +179,7 @@ export function tierFor(band: string): Tier {
     case "moderate":
       return { label: "Silver driver", blurb: "Solid driving — room to reach Platinum" };
     default:
-      return { label: "Watch tier", blurb: "Elevated risk — coaching can lower your premium" };
+      return { label: "Needs coaching", blurb: "Elevated risk — coaching can lower the premium" };
   }
 }
 
