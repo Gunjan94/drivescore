@@ -22,3 +22,13 @@ data/generated/
 
 # OS
 .DS_Store
+
+# --- Security hardening (added during repo audit) ---
+.env
+.env.local
+.env.*.local
+backend/.env.local
+*.pem
+*_accessKeys.csv
+aws_credentials*
+Submission_for_*/

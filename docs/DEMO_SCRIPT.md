@@ -64,8 +64,9 @@ operator's view (live) → the insurer's view (live) → "is it real?" → the b
 > move."
 
 ### Drilling into one driver  (~2:00 – 3:10)
-**[Open the 'Needs coaching' leaderboard; click the worst driver → Driver Detail.]**
-> "From the fleet to one driver. This is Marcus, one of the worst, based out of Bukit Batok, with a
+**[Point to the 'Needs coaching' leaderboard (worst drivers first). Then open Driver Detail and use the 'Jump to driver' switcher to select Marcus Reid — the middle persona, "Risky · underpriced".]**
+> "From the fleet to one driver. This leaderboard ranks who needs coaching most, worst first. Let me open
+> one whose record tells the whole story — Marcus, a high-risk driver based out of Bukit Batok, with a
 > DriveScore of thirty. Here's where he drives — and the red, the hard-braking and night events, jump
 > out — and the system says, in plain English, exactly what to coach first."
 
@@ -161,7 +162,7 @@ operator's view (live) → the insurer's view (live) → "is it real?" → the b
 ## Click-cue cheat sheet
 1. **Open** on Fleet Command, light theme — ride map is the backdrop for the 0:00 narration.
 2. **Fleet Command:** map → KPI strip (score 63, 216 high-risk) → insurance impact (S$873k → S$668k = **S$204k/yr**) → "show how this is calculated" → coaching upside **S$63k/yr**.
-3. **Leaderboard → worst driver → Driver Detail (Marcus, Bukit Batok):** trip map → factors → **Claims (red 'Risk confirmed')**.
+3. **Driver Detail → 'Jump to driver' persona switcher → Marcus Reid (Bukit Batok, score 30):** trip map → factors → **Claims (red 'Risk confirmed')**. ⚠️ The 'Needs coaching' leaderboard's top rows are the book's lowest scorers (score ~8–13), **not** Marcus (he ranks ~95th) — reach Marcus via the persona switcher, which holds the three demo drivers with claims stories.
 4. **Persona switch → Sarah:** re-rates live (score 86, safe).
 5. **Insurer View:** counters (**191** / **117**) → click 'Risky but underpriced' → driver list → click a driver → 'Selected vehicle' beside the map → KPI strip (75.8→72.0%, +6.2pp).
 6. **Rating Lab:** drag night-driving → AI names it → drag hard-braking → AI re-names it.
@@ -169,7 +170,7 @@ operator's view (live) → the insurer's view (live) → "is it real?" → the b
 
 ## Numbers cheat sheet (verified live — should match screen)
 - **Fleet (Ninja Logistics, insured by Etiqa):** **600** vehicles · avg **63** · **216** high-risk · premium **S$668,544** vs **S$872,724** old flat rate = **S$204,180/yr saved** · coaching upside **S$62,636/yr**.
-- **Marcus (D0002):** score **30**, Bukit Batok · 2 at-fault claims → "Risk confirmed." **Sarah (D0001):** score **86** → "Low risk confirmed." **Priya (D0003):** **67**.
+- **Marcus (D0002):** score **30**, Bukit Batok · 2 at-fault claims → "Risk confirmed." (Reached via the persona switcher — **not** the top of the 'Needs coaching' leaderboard, whose worst rows score ~8–13.) **Sarah (D0001):** score **86** → "Low risk confirmed." **Priya N. (D0003):** **67**.
 - **Insurer View:** **191** safe-but-overcharged · **117** risky-but-underpriced · claims-cost ratio **75.8% → 72.0%** · retained **+6.2pp**.
 
 ## Delivery notes — it's a recorded voice-over, not a live pitch

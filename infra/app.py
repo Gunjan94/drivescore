@@ -1,6 +1,6 @@
 """CDK app entry — DriveScore.
 
-Pinned to the PERSONAL account <APP_ACCOUNT> / ap-southeast-1. A guardrail aborts
+Pinned to the account set via DEPLOY_ACCOUNT / ap-southeast-1. A guardrail aborts
 synth/deploy if the resolved credentials point anywhere else, so a stray default
 (work) profile can never deploy this stack.
 """
@@ -11,7 +11,7 @@ import aws_cdk as cdk
 
 from drivescore_stack import DriveScoreStack
 
-ACCOUNT = "<APP_ACCOUNT>"
+ACCOUNT = os.environ.get("DEPLOY_ACCOUNT") or os.environ.get("CDK_DEFAULT_ACCOUNT")
 REGION = "ap-southeast-1"
 
 resolved = os.environ.get("CDK_DEFAULT_ACCOUNT")
